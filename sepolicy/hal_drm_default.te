@@ -1,0 +1,2 @@
+# audit2allow
+allow hal_drm_default vndbinder_device:chr_file rw_file_perms;

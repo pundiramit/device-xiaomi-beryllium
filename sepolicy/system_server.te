@@ -1,0 +1,4 @@
+# audit2allow
+allow system_server same_process_hal_file:file { getattr map open read };
+allow system_server sysfs_mdss:file { getattr open read };
+allow system_server sysfs_rtc:file { getattr open read };

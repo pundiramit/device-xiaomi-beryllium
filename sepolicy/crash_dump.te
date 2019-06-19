@@ -1,0 +1,7 @@
+# audit2allow
+allow crash_dump bluetooth_data_file:file { getattr map open read };
+allow crash_dump bluetooth_prop:file { getattr map open };
+allow crash_dump device_config_runtime_native_boot_prop:file { getattr map open };
+allow crash_dump device_config_runtime_native_prop:file { getattr map open };
+allow crash_dump hwservicemanager_prop:file { getattr map open };
+allow crash_dump runtime_event_log_tags_file:file getattr;

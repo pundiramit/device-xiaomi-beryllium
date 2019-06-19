@@ -1,0 +1,6 @@
+# audit2allow
+allow bootanim device:dir { open read };
+allow bootanim gpu_device:chr_file { getattr ioctl map open read write };
+allow bootanim sysfs_mdss:dir search;
+allow bootanim sysfs_mdss:file { getattr open read };
+allow bootanim same_process_hal_file:file { execute getattr map open read };

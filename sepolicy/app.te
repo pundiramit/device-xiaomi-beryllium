@@ -1,0 +1,8 @@
+# appdomain is domain for all zygote spawned apps,
+# they need access to gpu_device, /dev/dri/*, to
+# render the standard UI.
+allow appdomain device:dir { open read };
+
+# Also need access to /sys/devices/platform/soc/*.mdss/
+allow { appdomain -isolated_app } sysfs_mdss:file { getattr open read };
+allow { appdomain -isolated_app } sysfs_mdss:dir search;

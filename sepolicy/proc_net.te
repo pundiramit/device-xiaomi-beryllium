@@ -1,0 +1,2 @@
+# audit2allow
+allow proc_net proc:filesystem associate;
