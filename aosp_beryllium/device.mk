@@ -41,11 +41,5 @@ PRODUCT_COPY_FILES := \
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.aosp_beryllium
 
-# Software Gatekeeper
-PRODUCT_PACKAGES += \
-    gatekeeper.aosp_beryllium \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
-
 # Copy firmware files
 $(call inherit-product-if-exists, device/xiaomi/beryllium/firmware/device.mk)

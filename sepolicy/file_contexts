@@ -6,6 +6,7 @@
 /sys/devices/platform/soc/ae00000.mdss		u:object_r:sysfs_mdss:s0
 
 /sys/devices/platform/soc/c440000.spmi/spmi-0/0-00/c440000.spmi:pmic@0:rtc@6000/rtc	u:object_r:sysfs_rtc:s0
+/vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software			u:object_r:hal_gatekeeper_default_exec:s0
 
 /(vendor|system/vendor)/lib(64)?/hw/gralloc\.gbm\.so	u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib(64)?/libglapi\.so		u:object_r:same_process_hal_file:s0
