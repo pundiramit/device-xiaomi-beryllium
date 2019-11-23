@@ -1,5 +1,10 @@
+modalias_handling enabled
+
 /dev/sw_sync              0660   root       graphics
 
 # gpu
 /dev/dri/card0 0660 system graphics
 /dev/dri/renderD128 0666 system graphics
+
+# media.codec2
+/dev/ion 0664 system system

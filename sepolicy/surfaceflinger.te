@@ -1,6 +1,1 @@
-# audit2allow
-allow surfaceflinger device:dir { open read };
-allow surfaceflinger gpu_device:chr_file { getattr ioctl map open read write map};
-allow surfaceflinger sysfs_mdss:dir search;
-allow surfaceflinger sysfs_mdss:file { getattr open read map };
-allow surfaceflinger same_process_hal_file:file { getattr open read };
+gpu_access(surfaceflinger)

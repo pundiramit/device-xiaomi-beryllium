@@ -635,9 +635,6 @@ static int adev_open(const hw_module_t* module, const char* name,
         hw_device_t** device)
 {
     struct alsa_audio_device *adev;
-    struct mixer *mixer;
-    struct mixer_ctl *ctl;
-    const char *control = "QUAT_MI2S_RX Audio Mixer MultiMedia1";
 
     ALOGV("adev_open: %s", name);
 
@@ -673,18 +670,6 @@ static int adev_open(const hw_module_t* module, const char* name,
     adev->devices = AUDIO_DEVICE_NONE;
 
     *device = &adev->hw_device.common;
-
-    mixer = mixer_open(CARD_OUT);
-    if (!mixer)
-        ALOGE("Failed to open mixer");
-    else {
-        ctl = mixer_get_ctl_by_name(mixer, control);
-        if (!ctl)
-            ALOGE("Invalid mixer control: %s", control);
-        else if (mixer_ctl_set_value(ctl, 0, 1))
-            ALOGE("Mixer ctl Error: invalid value");
-        mixer_close(mixer);
-    }
 
     return 0;
 }

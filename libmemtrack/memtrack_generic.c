@@ -18,7 +18,7 @@
 
 #include <hardware/memtrack.h>
 
-int hikey_memtrack_init(const struct memtrack_module *module)
+int generic_memtrack_init(const struct memtrack_module *module)
 {
     if (!module)
         return -1;
@@ -36,10 +36,10 @@ struct memtrack_module HAL_MODULE_INFO_SYM = {
         .module_api_version = MEMTRACK_MODULE_API_VERSION_0_1,
         .hal_api_version = HARDWARE_HAL_API_VERSION,
         .id = MEMTRACK_HARDWARE_MODULE_ID,
-        .name = "Dummy Memory Tracker HAL for Dragonboards",
+        .name = "Dummy Memory Tracker HAL",
         .author = "The Android Open Source Project",
         .methods = &memtrack_module_methods,
     },
 
-    .init = hikey_memtrack_init,
+    .init = generic_memtrack_init,
 };

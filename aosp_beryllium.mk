@@ -1,3 +1,5 @@
+# Kernel tree is hosted at https://github.com/pundiramit/linux/tree/display (beryllium_defconfig).
+# cat arch/arm64/boot/Image.gz arch/arm64/boot/dts/qcom/sdm845-beryllium.dtb > Image.gz-dtb-beryllium
 TARGET_PREBUILT_KERNEL ?= Image.gz-dtb-beryllium-5.2
 
 # Inherit the full_base and device configurations

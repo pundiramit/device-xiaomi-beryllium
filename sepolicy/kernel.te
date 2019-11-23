@@ -3,3 +3,5 @@ allow kernel device:chr_file { create setattr };
 allow kernel device:dir { add_name create write };
 allow kernel self:capability mknod;
 allow kernel vendor_file:file { open read };
+allow kernel self:system module_request;
+allow vendor_init kernel:system module_request;

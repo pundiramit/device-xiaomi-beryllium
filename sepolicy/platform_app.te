@@ -1,2 +1,1 @@
-# audit2allow
-allow platform_app same_process_hal_file:file { execute getattr map open read };
+gpu_access(platform_app)

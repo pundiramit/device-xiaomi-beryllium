@@ -1,1 +1,2 @@
-type sysfs_mdss, fs_type, sysfs_type;
+type sysfs_gpu, fs_type, sysfs_type;
+type dri_device, dev_type;

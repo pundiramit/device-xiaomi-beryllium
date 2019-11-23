@@ -1,3 +1,6 @@
-genfscon sysfs   /devices/platform/soc/ae00000.mdss	u:object_r:sysfs_mdss:s0
-
+genfscon sysfs   /devices/platform/soc/ae00000.mdss	u:object_r:sysfs_gpu:s0
 genfscon sysfs   /devices/platform/soc/c440000.spmi/spmi-0/0-00/c440000.spmi:pmic@0:rtc@6000	u:object_r:sysfs_rtc:s0
+
+# sysfs path changed in v5.4+ kernel for sdm845 devices
+genfscon sysfs   /devices/platform/soc@0/ae00000.mdss	u:object_r:sysfs_gpu:s0
+genfscon sysfs   /devices/platform/soc@0/c440000.spmi/spmi-0/0-00/c440000.spmi:pmic@0:rtc@6000	u:object_r:sysfs_rtc:s0
