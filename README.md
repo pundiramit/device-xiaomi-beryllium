@@ -91,7 +91,6 @@ $ cat arch/arm64/boot/Image.gz arch/arm64/boot/dts/qcom/sdm845-beryllium.dtb > a
 # Known Issues -->
 * Can not shutdown the device from commandline. So reboot
   into TWRP recovery and shutdown PocoF1 from there instead.
-* "fastboot boot boot.img" doesn't work.
 
 # ToDo -->
 * Fix Boot Animation
