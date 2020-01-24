@@ -1,3 +1,0 @@
-# audit2allow
-allow netd kernel:system module_request;
-allow netd self:capability sys_module;
