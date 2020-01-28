@@ -159,3 +159,5 @@ PRODUCT_COPY_FILES +=  \
 
 # Copy firmware files
 $(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)
+
+PRODUCT_SOONG_NAMESPACES += external/mesa3d
