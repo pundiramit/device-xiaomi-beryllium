@@ -6,6 +6,10 @@ DB845C_MODS := $(wildcard $(DB845C_KERNEL_DIR)/*.ko)
 # https://github.com/pundiramit/linux/tree/android-5.4-modules
 LOCAL_MODS := $(wildcard $(LOCAL_KERNEL_DIR)/*.ko)
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(DB845C_MODS)
+# Skip copying modules broken on android-5.4
+# Use local module copy instead
+SKIP_MODS := %/msm.ko
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(filter-out $(SKIP_MODS),$(DB845C_MODS))
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES += $(LOCAL_MODS)
 
 # Inherit the full_base and device configurations
