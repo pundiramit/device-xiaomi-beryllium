@@ -20,7 +20,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 
 PRODUCT_COPY_FILES := \
-    $(KERNEL_DIR)/$(TARGET_PREBUILT_KERNEL):kernel \
     $(LOCAL_PATH)/fstab.aosp_beryllium:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.aosp_beryllium \
     $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.aosp_beryllium \
     $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.aosp_beryllium \

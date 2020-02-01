@@ -1,17 +1,12 @@
-KERNEL_DIR := device/xiaomi/beryllium/prebuilt-kernel
+DB845C_KERNEL_DIR := device/linaro/dragonboard-kernel/android-5.4
+LOCAL_KERNEL_DIR := device/xiaomi/beryllium/prebuilt-kernel/android-5.4
 
-ifneq ($(USES_GKI), true)
-  # Kernel tree is hosted at https://github.com/pundiramit/linux/tree/display (beryllium_defconfig).
-  # cat arch/arm64/boot/Image.gz arch/arm64/boot/dts/qcom/sdm845-beryllium.dtb > Image.gz-dtb-beryllium
-  TARGET_PREBUILT_KERNEL ?= Image.gz-dtb-beryllium-5.2
-else
-  TARGET_PREBUILT_KERNEL ?= Image.gz-dtb
-  MODULES := $(wildcard $(KERNEL_DIR)/*.ko)
-  ifneq ($(MODULES),)
-    BOARD_VENDOR_KERNEL_MODULES += $(MODULES)
-    BOARD_VENDOR_RAMDISK_KERNEL_MODULES += $(MODULES)
-  endif
-endif
+DB845C_MODS := $(wildcard $(DB845C_KERNEL_DIR)/*.ko)
+# Local modules are built from following tree:
+# https://github.com/pundiramit/linux/tree/android-5.4-modules
+LOCAL_MODS := $(wildcard $(LOCAL_KERNEL_DIR)/*.ko)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(DB845C_MODS)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES += $(LOCAL_MODS)
 
 # Inherit the full_base and device configurations
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
