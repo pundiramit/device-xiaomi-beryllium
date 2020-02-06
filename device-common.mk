@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Device overlay
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
