@@ -1,0 +1,13 @@
+type rmtfs, domain;
+type rmtfs_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(rmtfs)
+
+allow rmtfs block_device:dir search;
+allow rmtfs modem_block_device:blk_file { open read };
+allow rmtfs rmtfs_device:chr_file { open read write };
+allow rmtfs self:capability net_admin;
+allow rmtfs self:qipcrtr_socket { bind create getattr read setopt write };
+allow rmtfs sysfs_rmtfs:dir { open read search};
+allow rmtfs sysfs_rmtfs:file r_file_perms;
+allow rmtfs sysfs_rmtfs:file write;

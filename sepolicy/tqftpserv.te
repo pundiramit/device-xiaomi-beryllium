@@ -1,0 +1,10 @@
+type tqftpserv, domain;
+
+type tqftpserv_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(tqftpserv);
+
+allow tqftpserv self:qipcrtr_socket { connect create getattr read setopt write };
+allow tqftpserv sysfs_tqftpserv:dir { open read search };
+allow tqftpserv sysfs_tqftpserv:file { open read };
+allow tqftpserv tqftpserv_vendor_data_file:dir { add_name create open read search write };
+allow tqftpserv tqftpserv_vendor_data_file:file { create open write };

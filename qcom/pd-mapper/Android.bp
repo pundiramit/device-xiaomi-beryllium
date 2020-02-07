@@ -1,0 +1,9 @@
+cc_binary {
+    name: "pd-mapper",
+    vendor: true,
+    srcs: [
+	"pd-mapper.c",
+	"servreg_loc.c",
+    ],
+    shared_libs: ["libqrtr"],
+}

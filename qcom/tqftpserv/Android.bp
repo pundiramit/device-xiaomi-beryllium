@@ -1,0 +1,9 @@
+cc_binary {
+    name: "tqftpserv",
+    vendor: true,
+    srcs: [
+        "tqftpserv.c",
+        "translate.c",
+    ],
+    shared_libs: ["libqrtr"],
+}

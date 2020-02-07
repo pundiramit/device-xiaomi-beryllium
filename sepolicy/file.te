@@ -1,2 +1,7 @@
 type sysfs_gpu, fs_type, sysfs_type;
+type sysfs_rmtfs, fs_type, sysfs_type;
+type sysfs_tqftpserv, fs_type, sysfs_type;
 type dri_device, dev_type;
+type rmtfs_device, dev_type;
+type modem_block_device, dev_type;
+type tqftpserv_vendor_data_file, file_type, data_file_type, mlstrustedobject;

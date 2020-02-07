@@ -1,0 +1,6 @@
+type pd_mapper, domain;
+
+type pd_mapper_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(pd_mapper);
+
+allow pd_mapper self:qipcrtr_socket { create getattr read setopt write };

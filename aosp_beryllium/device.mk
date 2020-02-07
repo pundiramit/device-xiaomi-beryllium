@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+PRODUCT_SOONG_NAMESPACES += \
+    device/xiaomi/beryllium
+
 # copied from crosshatch
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
@@ -29,3 +32,11 @@ PRODUCT_COPY_FILES := \
 
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.aosp_beryllium
+
+PRODUCT_PACKAGES += \
+    pd-mapper \
+    qrtr-ns \
+    qrtr-cfg \
+    qrtr-lookup \
+    rmtfs \
+    tqftpserv

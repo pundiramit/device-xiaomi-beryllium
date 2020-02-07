@@ -1,0 +1,48 @@
+package servreg_loc;
+
+const SERVREG_QMI_SERVICE = 0x40;
+const SERVREG_QMI_VERSION = 0x101;
+const SERVREG_QMI_INSTANCE = 0x0;
+
+const QMI_RESULT_SUCCESS = 0;
+const QMI_RESULT_FAILURE = 1;
+
+const QMI_ERR_NONE = 0;
+const QMI_ERR_INTERNAL = 1;
+const QMI_ERR_MALFORMED_MSG = 2;
+
+const SERVREG_LOC_GET_DOMAIN_LIST = 0x21;
+const SERVREG_LOC_PFR = 0x24;
+
+struct qmi_result {
+	u16 result;
+	u16 error;
+};
+
+struct domain_list_entry {
+	string name;
+	u32 instance_id;
+	u8 service_data_valid;
+	u32 service_data;
+};
+
+request get_domain_list_req {
+	required string name = 1;
+	optional u32 offset = 0x10;
+} = 0x20;
+
+response get_domain_list_resp {
+	required qmi_result result = 2;
+	optional u16 total_domains = 0x10;
+	optional u16 db_revision = 0x11;
+	optional domain_list_entry domain_list[255] = 0x12;
+} = 0x20;
+
+request pfr_req {
+	required string service = 1;
+	required string reason = 2;
+} = 0x24;
+
+response pfr_resp {
+	required qmi_result result = 2;
+} = 0x24;

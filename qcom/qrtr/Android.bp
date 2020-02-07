@@ -1,0 +1,49 @@
+cc_library {
+    name: "libqrtr",
+    vendor: true,
+    srcs: [
+        "lib/logging.c",
+        "lib/qrtr.c",
+        "lib/qmi.c",
+    ],
+    cflags: ["-fPIC"],
+    export_include_dirs: ["lib"],
+    local_include_dirs: ["src"],
+}
+
+cc_binary {
+    name: "qrtr-ns",
+    vendor: true,
+    srcs: [
+        "lib/logging.c",
+        "src/addr.c",
+        "src/ns.c",
+        "src/map.c",
+        "src/hash.c",
+        "src/waiter.c",
+        "src/util.c",
+    ],
+    local_include_dirs: ["lib"],
+}
+
+cc_binary {
+    name: "qrtr-cfg",
+    vendor: true,
+    srcs: [
+        "lib/logging.c",
+        "src/addr.c",
+        "src/cfg.c",
+    ],
+    local_include_dirs: ["lib"],
+}
+
+cc_binary {
+    name: "qrtr-lookup",
+    vendor: true,
+    srcs: [
+        "lib/logging.c",
+        "src/lookup.c",
+        "src/util.c",
+    ],
+    local_include_dirs: ["lib"],
+}
