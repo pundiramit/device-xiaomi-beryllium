@@ -109,6 +109,7 @@ static int translate_readonly(const char *file)
 		if (n < 0) {
 			continue;
 		}
+		firmware_value[n] = '\0';
 
 		if (strlen(FIRMWARE_BASE) + strlen(firmware_value) + 1 +
 		    strlen(file) + 1 > sizeof(path))
