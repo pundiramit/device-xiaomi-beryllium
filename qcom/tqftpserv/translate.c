@@ -45,7 +45,13 @@
 #define READONLY_PATH	"/readonly/firmware/image/"
 #define READWRITE_PATH	"/readwrite/"
 
+#ifndef ANDROID
 #define FIRMWARE_BASE	"/lib/firmware/"
+#define TQFTPSERV_TMP	"/tmp/tqftpserv"
+#else
+#define FIRMWARE_BASE	"/vendor/firmware/"
+#define TQFTPSERV_TMP	"/data/vendor/tmp/tqftpserv"
+#endif
 
 /**
  * translate_readonly() - open "file" residing with remoteproc firmware
@@ -142,15 +148,15 @@ static int translate_readwrite(const char *file, int flags)
 	int ret;
 	int fd;
 
-	ret = mkdir("/tmp/tqftpserv", 0700);
+	ret = mkdir(TQFTPSERV_TMP, 0700);
 	if (ret < 0 && errno != EEXIST) {
-		warn("failed to create /tmp/tqftpserv");
+		warn("failed to create temporary tqftpserv directory");
 		return -1;
 	}
 
-	base = open("/tmp/tqftpserv", O_RDONLY | O_DIRECTORY);
+	base = open(TQFTPSERV_TMP, O_RDONLY | O_DIRECTORY);
 	if (base < 0) {
-		warn("failed top open /tmp/tqftpserv");
+		warn("failed top open temporary tqftpserv directory");
 		return -1;
 	}
 
