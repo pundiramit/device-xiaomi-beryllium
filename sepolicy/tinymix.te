@@ -1,0 +1,7 @@
+type tinymix, domain, coredomain;
+type tinymix_exec, exec_type, system_file_type, file_type;
+
+init_daemon_domain(tinymix)
+
+allow tinymix audio_device:chr_file { ioctl open read write };
+allow tinymix audio_device:dir search;
