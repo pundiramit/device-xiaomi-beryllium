@@ -40,3 +40,6 @@ PRODUCT_PACKAGES += \
     qrtr-lookup \
     rmtfs \
     tqftpserv
+
+PRODUCT_COPY_FILES += \
+    device/xiaomi/beryllium/qcom/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qcom.rc
