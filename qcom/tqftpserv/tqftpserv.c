@@ -309,7 +309,7 @@ static void handle_rrq(const char *buf, size_t len, struct sockaddr_qrtr *sq)
 	}
 }
 
-static void handle_wrq(const char *buf, size_t len, struct sockaddr_qrtr *sq)
+static void handle_wrq(const char *buf, size_t len __unused, struct sockaddr_qrtr *sq)
 {
 	struct tftp_client *client;
 	const char *filename;
@@ -480,7 +480,7 @@ static void client_close_and_free(struct tftp_client *client)
 	free(client);
 }
 
-int main(int argc, char **argv)
+int main(int argc __unused, char **argv __unused)
 {
 	struct tftp_client *client;
 	struct tftp_client *next;

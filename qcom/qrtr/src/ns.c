@@ -481,7 +481,8 @@ static int ctrl_cmd_new_server(struct context *ctx, struct sockaddr_qrtr *from,
 }
 
 static int ctrl_cmd_del_server(struct context *ctx, struct sockaddr_qrtr *from,
-			       unsigned int service, unsigned int instance,
+			       unsigned int service __unused,
+			       unsigned int instance __unused,
 			       unsigned int node_id, unsigned int port)
 {
 	struct node *node;
