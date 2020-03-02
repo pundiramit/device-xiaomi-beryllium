@@ -685,6 +685,14 @@ static void node_mi_free(struct map_item *mi)
 	free(node);
 }
 
+static void go_dormant(int sock)
+{
+	close(sock);
+
+	for (;;)
+		sleep(UINT_MAX);
+}
+
 static void usage(const char *progname)
 {
 	fprintf(stderr, "%s [-f] [-s] [<node-id>]\n", progname);
@@ -760,8 +768,14 @@ int main(int argc, char **argv)
 	ctx.local_node = sq.sq_node;
 
 	rc = bind(ctx.sock, (void *)&sq, sizeof(sq));
-	if (rc < 0)
+	if (rc < 0) {
+		if (errno == EADDRINUSE) {
+			PLOGE("nameserver already running, going dormant");
+			go_dormant(ctx.sock);
+		}
+
 		PLOGE_AND_EXIT("bind control socket");
+	}
 
 	ctx.bcast_sq.sq_family = AF_QIPCRTR;
 	ctx.bcast_sq.sq_node = QRTR_NODE_BCAST;
