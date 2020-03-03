@@ -249,8 +249,8 @@ static int qmi_encode_struct_elem(struct qmi_elem_info *ei_array,
 			LOGW("%s: STRUCT Encode failure\n", __func__);
 			return rc;
 		}
-		buf_dst = buf_dst + rc;
-		buf_src = buf_src + temp_ei->elem_size;
+		buf_dst = (char*)buf_dst + rc;
+		buf_src = (char*)buf_src + temp_ei->elem_size;
 		encoded_bytes += rc;
 	}
 
@@ -310,7 +310,7 @@ static int qmi_encode_string_elem(struct qmi_elem_info *ei_array,
 		encoded_bytes += rc;
 	}
 
-	rc = qmi_encode_basic_elem(buf_dst + encoded_bytes, buf_src,
+	rc = qmi_encode_basic_elem((char*)buf_dst + encoded_bytes, buf_src,
 				   string_len, temp_ei->elem_size);
 	encoded_bytes += rc;
 
@@ -354,7 +354,7 @@ static int qmi_encode(struct qmi_elem_info *ei_array, void *out_buf,
 		buf_dst = buf_dst + (TLV_LEN_SIZE + TLV_TYPE_SIZE);
 
 	while (temp_ei->data_type != QMI_EOTI) {
-		buf_src = in_c_struct + temp_ei->offset;
+		buf_src = (char*)in_c_struct + temp_ei->offset;
 		tlv_type = temp_ei->tlv_type;
 
 		if (temp_ei->array_type == NO_ARRAY) {
@@ -522,8 +522,8 @@ static int qmi_decode_struct_elem(struct qmi_elem_info *ei_array,
 				tlv_len - decoded_bytes, dec_level);
 		if (rc < 0)
 			return rc;
-		buf_src = buf_src + rc;
-		buf_dst = buf_dst + temp_ei->elem_size;
+		buf_src = (char*)buf_src + rc;
+		buf_dst = (char*)buf_dst + temp_ei->elem_size;
 		decoded_bytes += rc;
 	}
 
@@ -585,7 +585,7 @@ static int qmi_decode_string_elem(struct qmi_elem_info *ei_array,
 		return -EFAULT;
 	}
 
-	rc = qmi_decode_basic_elem(buf_dst, buf_src + decoded_bytes,
+	rc = qmi_decode_basic_elem(buf_dst, (char*)buf_src + decoded_bytes,
 				   string_len, temp_ei->elem_size);
 	*((char *)buf_dst + string_len) = '\0';
 	decoded_bytes += rc;
@@ -654,7 +654,7 @@ static int qmi_decode(struct qmi_elem_info *ei_array, void *out_c_struct,
 			tlv_pointer = buf_src;
 			QMI_ENCDEC_DECODE_TLV(&tlv_type,
 					      &tlv_len, tlv_pointer);
-			buf_src += (TLV_TYPE_SIZE + TLV_LEN_SIZE);
+			buf_src = (uint8_t*)buf_src + (TLV_TYPE_SIZE + TLV_LEN_SIZE);
 			decoded_bytes += (TLV_TYPE_SIZE + TLV_LEN_SIZE);
 			temp_ei = find_ei(ei_array, tlv_type);
 			if (!temp_ei && tlv_type < OPTIONAL_TLV_TYPE_START) {
@@ -673,11 +673,11 @@ static int qmi_decode(struct qmi_elem_info *ei_array, void *out_c_struct,
 			tlv_len = in_buf_len - decoded_bytes;
 		}
 
-		buf_dst = out_c_struct + temp_ei->offset;
+		buf_dst = (uint8_t*)out_c_struct + temp_ei->offset;
 		if (temp_ei->data_type == QMI_OPT_FLAG) {
 			memcpy(buf_dst, &opt_flag_value, sizeof(uint8_t));
 			temp_ei = temp_ei + 1;
-			buf_dst = out_c_struct + temp_ei->offset;
+			buf_dst = (uint8_t*)out_c_struct + temp_ei->offset;
 		}
 
 		if (temp_ei->data_type == QMI_DATA_LEN) {
@@ -687,7 +687,7 @@ static int qmi_decode(struct qmi_elem_info *ei_array, void *out_c_struct,
 						   1, data_len_sz);
 			memcpy(buf_dst, &data_len_value, sizeof(uint32_t));
 			temp_ei = temp_ei + 1;
-			buf_dst = out_c_struct + temp_ei->offset;
+			buf_dst = (uint8_t*)out_c_struct + temp_ei->offset;
 			tlv_len -= data_len_sz;
 			UPDATE_DECODE_VARIABLES(buf_src, decoded_bytes, rc);
 		}
@@ -777,7 +777,7 @@ ssize_t qmi_encode_message(struct qrtr_packet *pkt, int type, int msg_id,
 
 	/* Encode message, if we have a message */
 	if (c_struct) {
-		msglen = qmi_encode(ei, pkt->data + sizeof(*hdr), c_struct,
+		msglen = qmi_encode(ei, (char*)pkt->data + sizeof(*hdr), c_struct,
 				    pkt->data_len - sizeof(*hdr), 1);
 		if (msglen < 0)
 			return msglen;
@@ -839,7 +839,7 @@ int qmi_decode_message(void *c_struct, unsigned int *txn,
 	if (txn)
 		*txn = hdr->txn_id;
 
-	return qmi_decode(ei, c_struct, pkt->data + sizeof(*hdr), pkt->data_len - sizeof(*hdr), 1);
+	return qmi_decode(ei, c_struct, (char*)pkt->data + sizeof(*hdr), pkt->data_len - sizeof(*hdr), 1);
 }
 
 /* Common header in all QMI responses */
