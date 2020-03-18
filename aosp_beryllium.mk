@@ -1,33 +1,16 @@
 ifndef TARGET_KERNEL_USE
-
-KERNEL_MODS := $(wildcard device/linaro/dragonboard-kernel/android-5.4/*.ko)
-
-# Local modules are built from following tree:
-# https://github.com/pundiramit/linux/tree/android-5.4-modules
-LOCAL_MODS := $(wildcard device/xiaomi/beryllium/prebuilt-kernel/android-5.4/*.ko)
-
-# Skip copying modules broken on android-5.4
-# Use local module copy instead
-SKIP_MODS := %/msm.ko
-
-# BT modules go to vendor partition
-ONLY_VENDOR := %/btqca.ko %/hci_uart.ko
-BOARD_VENDOR_KERNEL_MODULES := $(filter $(ONLY_VENDOR),$(KERNEL_MODS))
-
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(filter-out $(SKIP_MODS) $(ONLY_VENDOR),$(KERNEL_MODS))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES += $(LOCAL_MODS)
-
-else # ifdef TARGET_KERNEL_USE
+TARGET_KERNEL_USE := 5.4
+endif
 
 KERNEL_MODS := $(wildcard device/xiaomi/beryllium/prebuilt-kernel/android-$(TARGET_KERNEL_USE)/*.ko)
 
 # Following modules go to vendor partition
-ONLY_VENDOR := %/btqca.ko %/hci_uart.ko
+# msm.ko is too big (31M) for ramdisk
+VENDOR_KERN_MODS := %/msm.ko
+BOARD_VENDOR_KERNEL_MODULES := $(filter $(VENDOR_KERN_MODS),$(KERNEL_MODS))
 
-BOARD_VENDOR_KERNEL_MODULES := $(filter $(ONLY_VENDOR),$(KERNEL_MODS))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(filter-out $(ONLY_VENDOR),$(KERNEL_MODS))
-
-endif
+# All other modules go to ramdisk
+BOARD_GENERIC_RAMDISK_KERNEL_MODULES := $(filter-out $(VENDOR_KERN_MODS),$(KERNEL_MODS))
 
 # Inherit the full_base and device configurations
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
