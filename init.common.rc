@@ -5,6 +5,10 @@ on fs
     mount_all /vendor/etc/init/fstab.${ro.hardware}
     swapon_all /vendor/etc/init/fstab.${ro.hardware}
 
+on post-fs
+    # set RLIMIT_MEMLOCK to 64MB
+    setrlimit 8 67108864 67108864
+
 on init
     # For legacy support
     # See storage config details at http://source.android.com/tech/storage/
