@@ -11,7 +11,7 @@ BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
 BOARD_KERNEL_CMDLINE     := console=ttyMSM0,115200n8 androidboot.console=ttyMSM0
-BOARD_KERNEL_CMDLINE     += androidboot.hardware=aosp_beryllium androidboot.boot_devices=soc/1d84000.ufshc
+BOARD_KERNEL_CMDLINE     += androidboot.hardware=aosp_beryllium androidboot.boot_devices=soc@0/1d84000.ufshc
 BOARD_KERNEL_CMDLINE     += firmware_class.path=/vendor/firmware/ init=/init
 BOARD_KERNEL_CMDLINE     += pd_ignore_unused clk_ignore_inherited
  
