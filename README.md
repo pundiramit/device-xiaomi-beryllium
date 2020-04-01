@@ -31,8 +31,10 @@ very handy. Believe me :)
 * Download source and build AOSP images for Poco F1 (Beryllium) -->
 
 ```
+mkdir aosp-repo
+cd aosp-repo
 repo init -u https://android.googlesource.com/platform/manifest -b master
-git clone git@github.com:pundiramit/android-local-manifests.git .repo/local_manifests
+git clone git@github.com:pundiramit/android-local-manifests.git .repo/local_manifests -b master
 repo sync -j$nproc
 source build/envsetup.sh
 lunch aosp_beryllium-userdebug
@@ -64,36 +66,55 @@ fastboot reboot
 
 # Boot AOSP images.
 
-* Display is still a WIP. Bootanimation doesn't work, we get a
-  white splash screen instead. 30 seconds or so into boot (amid
-  white screen), we need to enforce a suspend-resume by pressing
-  the power button for the UI/home-screen to show up.
-* Touchpanel is in TODO as well, so not much you can do from UX
-  point of view.
-  You can use input keyevents from adb to move around (been there, done that!)
+* Touchpanel is not working, but you can connect BT
+  mouse by running following input command sequence
+  from adb commandline:
+
+```
+input swipe 20 2000 20 0
+input tap 300 600
+input tap 200 600
+input tap 200 600 # Scanning for devices here. So wait till your BT mouse appears.
+input tap 400 600
+input keyevent 22
+input keyevent 22
+input keyevent 66
+```
 
 # How to run custom kernels?
 
-Use standard abootimg commands to update kernel
-(Image.gz-dtb) in boot.img and fastboot flash the
-updated boot.img.
+* Run following commands to clone the kernel source and
+  prebuilt Android toolchains and build scripts:
 
-My working kernel is hosted at -->
 ```
-https://github.com/pundiramit/linux/tree/display (beryllium_defconfig).
+mkdir kernel-repo
+cd kernel-repo
+repo init -u https://android.googlesource.com/kernel/manifest -b common-android-mainline
+git clone git@github.com:pundiramit/android-local-manifests.git .repo/local_manifests -b kernel
+repo sync -j$nproc
+BUILD_CONFIG=beryllium/build.config.beryllium ./build/build.sh
 ```
 
-Prepare bootable kernel image (Image.gz-dtb) by running -->
+Delete all objects in aosp-repo/device/xiaomi/beryllium/prebuilt-kernel/android-mainline/
+then copy build artifacts from kernel-repo/out/android-mainline/dist/ to
+aosp-repo/device/xiaomi/beryllium/prebuilt-kernel/android-mainline/ build
+AOSP images again.
+
 ```
-$ cat arch/arm64/boot/Image.gz arch/arm64/boot/dts/qcom/sdm845-beryllium.dtb > arch/arm64/boot/Image.gz-dtb
+cd aosp-repo
+source build/envsetup.sh
+lunch aosp_beryllium-userdebug
+make TARGET_KERNEL_USE=mainline -j$nproc
 ```
+
+Now flash and boot AOSP images again with your custom kernel.
 
 # Known Issues -->
 * Can not shutdown the device from commandline. So reboot
   into TWRP recovery and shutdown PocoF1 from there instead.
 
 # ToDo -->
-* Fix Boot Animation
-* Enable Touch panel
-* Connectivity
+* Touch panel
+* WiFi, BT Audio
+* Audio
 * Energy Aware Scheduler
