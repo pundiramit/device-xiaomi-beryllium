@@ -109,12 +109,10 @@ make TARGET_KERNEL_USE=mainline -j$nproc
 
 Now flash and boot AOSP images again with your custom kernel.
 
-# Known Issues -->
-* Can not shutdown the device from commandline. So reboot
-  into TWRP recovery and shutdown PocoF1 from there instead.
-
-# ToDo -->
+ToDo -->
+* Brightness Control
 * Touch panel
-* WiFi, BT Audio
+* WiFi
 * Audio
 * Energy Aware Scheduler
+* Voice Call
