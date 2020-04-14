@@ -3,6 +3,8 @@ cc_binary {
     vendor: true,
     srcs: [
 	"pd-mapper.c",
+	"assoc.c",
+	"json.c",
 	"servreg_loc.c",
     ],
     shared_libs: ["libqrtr"],
