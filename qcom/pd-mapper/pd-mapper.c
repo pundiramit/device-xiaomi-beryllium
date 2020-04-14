@@ -241,6 +241,8 @@ static int pd_enumerate_jsons(struct assoc *json_set)
 			continue;
 		}
 
+		firmware_value[n] = '\0';
+
 		if (strlen(FIRMWARE_BASE) + strlen(firmware_value) + 1 > sizeof(path))
 			continue;
 
