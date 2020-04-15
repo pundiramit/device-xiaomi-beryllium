@@ -4,3 +4,7 @@ type pd_mapper_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(pd_mapper);
 
 allow pd_mapper self:qipcrtr_socket { create getattr read setopt write };
+allow pd_mapper sysfs_rmtfs:dir search;
+allow pd_mapper sysfs_rmtfs:file { open read };
+allow pd_mapper sysfs_tqftpserv:dir { open read search };
+allow pd_mapper sysfs_tqftpserv:file { open read };
