@@ -8,6 +8,8 @@ bindir := $(prefix)/bin
 servicedir := $(prefix)/lib/systemd/system
 
 SRCS := pd-mapper.c \
+        assoc.c \
+        json.c \
 	servreg_loc.c
 
 OBJS := $(SRCS:.c=.o)
