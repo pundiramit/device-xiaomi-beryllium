@@ -56,3 +56,6 @@ on post-fs-data
     write /sys/class/firmware/timeout 1
     start tqftpserv
     start rmtfs
+
+on shutdown
+    stop rmtfs
