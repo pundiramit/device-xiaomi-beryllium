@@ -10,7 +10,7 @@
 /dev/ttyMSM0				u:object_r:console_device:s0
 
 /sys/bus/platform/drivers/qcom-q6v5-mss							u:object_r:sysfs_mss:s0
-/sys/devices/platform/88f00000.memory/rmtfs						u:object_r:sysfs_rmtfs:s0
+/sys/devices/platform/f6301000.memory/rmtfs						u:object_r:sysfs_rmtfs:s0
 
 /sys/devices/platform/soc@0/4080000.remoteproc						u:object_r:sysfs_remoteproc:s0
 /sys/devices/platform/soc@0/ae00000.mdss						u:object_r:sysfs_gpu:s0

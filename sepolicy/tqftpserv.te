@@ -7,4 +7,4 @@ allow tqftpserv self:qipcrtr_socket { connect create getattr read setopt write }
 allow tqftpserv sysfs_remoteproc:dir { open read search };
 allow tqftpserv sysfs_remoteproc:file { open read };
 allow tqftpserv tqftpserv_vendor_data_file:dir { add_name create open read search write };
-allow tqftpserv tqftpserv_vendor_data_file:file { create open write };
+allow tqftpserv tqftpserv_vendor_data_file:file { create getattr open read write };
