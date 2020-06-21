@@ -35,6 +35,8 @@ on zygote-start
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
 
 on property:sys.boot_completed=1
+    chmod 0755 /sys/kernel/debug/tracing
+
     # update cpuset now that processors are up
     # Foreground should contain most cores (7 is reserved for top-app)
     write /dev/cpuset/foreground/cpus 0-6
