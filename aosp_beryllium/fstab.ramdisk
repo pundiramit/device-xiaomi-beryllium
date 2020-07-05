@@ -1,2 +1,4 @@
 /dev/block/platform/soc@0/1d84000.ufshc/by-name/system /system ext4 noatime,ro,errors=panic wait,first_stage_mount
 /dev/block/platform/soc@0/1d84000.ufshc/by-name/vendor /vendor ext4 noatime,ro,errors=panic wait,first_stage_mount
+LABEL=data         /data               ext4      discard,noauto_da_alloc,data=ordered,user_xattr,barrier=1    wait
+/devices/platform/soc@0/8804000.sdhci/mmc_host/mmc*    auto    auto    defaults    voldmanaged=sdcard1:auto,noemulatedsd

@@ -2,19 +2,14 @@ import init.${ro.hardware}.usb.rc
 import init.${ro.hardware}.power.rc
 
 on fs
-    mount_all /vendor/etc/init/fstab.${ro.hardware}
-    swapon_all /vendor/etc/init/fstab.${ro.hardware}
+    mount_all /vendor/etc/fstab.${ro.hardware}
+    swapon_all /vendor/etc/fstab.${ro.hardware}
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
 
 on init
-    # For legacy support
-    # See storage config details at http://source.android.com/tech/storage/
-    # since /storage is mounted on post-fs in init.rc
-    symlink /sdcard /storage/sdcard0
-
     # Initialize cpusets to boot-time values
     write /dev/cpuset/foreground/cpus 0-7
     write /dev/cpuset/background/cpus 0-7
