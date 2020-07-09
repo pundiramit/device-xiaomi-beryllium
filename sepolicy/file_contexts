@@ -28,6 +28,8 @@
 
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software			u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/pd-mapper									u:object_r:pd_mapper_exec:s0
+/vendor/bin/qrtr-cfg									u:object_r:qrtr_exec:s0
+/vendor/bin/qrtr-ns									u:object_r:qrtr_exec:s0
 /vendor/bin/rmtfs									u:object_r:rmtfs_exec:s0
 /vendor/bin/tqftpserv									u:object_r:tqftpserv_exec:s0
 
@@ -37,3 +39,4 @@
 /vendor/lib(64)?/libdrm_freedreno\.so							u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgbm\.so								u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libglapi\.so								u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libqrtr\.so								u:object_r:same_process_hal_file:s0

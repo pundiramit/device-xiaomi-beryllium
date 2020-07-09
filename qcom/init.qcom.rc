@@ -1,3 +1,10 @@
+service qrtr-ns /vendor/bin/qrtr-ns -f 1
+    class core
+    user root
+    group system
+    disabled
+    oneshot
+
 service pd_mapper /vendor/bin/pd-mapper
     class core
     user root
@@ -18,6 +25,10 @@ service rmtfs /vendor/bin/rmtfs -o /dev/block/platform/soc@0/1d84000.ufshc/by-na
     group system
     disabled
     oneshot
+
+on early-init
+    exec - root -- /vendor/bin/qrtr-cfg 1
+    start qrtr-ns
 
 on post-fs
     start pd_mapper

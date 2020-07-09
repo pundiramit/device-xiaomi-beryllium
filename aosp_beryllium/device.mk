@@ -34,6 +34,8 @@ PRODUCT_PACKAGES := audio.primary.aosp_beryllium
 
 PRODUCT_PACKAGES += \
     pd-mapper \
+    qrtr-ns \
+    qrtr-cfg \
     qrtr-lookup \
     rmtfs \
     tqftpserv

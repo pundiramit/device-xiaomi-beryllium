@@ -1,0 +1,8 @@
+type qrtr, domain;
+type qrtr_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(qrtr)
+
+allow qrtr self:capability net_admin;
+allow qrtr self:capability sys_admin;
+allow qrtr self:qipcrtr_socket create_socket_perms_no_ioctl;
+allow qrtr self:netlink_route_socket { create nlmsg_write read write };
