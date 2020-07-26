@@ -1,4 +1,4 @@
-ifneq ($(filter aosp_beryllium, $(TARGET_DEVICE)),)
+ifneq ($(filter beryllium, $(TARGET_DEVICE)),)
 
 IMAGE_GZ := device/xiaomi/beryllium/prebuilt-kernel/android-$(TARGET_KERNEL_USE)/Image.gz
 DTB := device/xiaomi/beryllium/prebuilt-kernel/android-$(TARGET_KERNEL_USE)/sdm845-beryllium.dtb

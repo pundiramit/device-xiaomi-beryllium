@@ -14,11 +14,11 @@ BOARD_GENERIC_RAMDISK_KERNEL_MODULES := $(filter-out $(VENDOR_KERN_MODS),$(KERNE
 
 # Inherit the full_base and device configurations
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, device/xiaomi/beryllium/aosp_beryllium/device.mk)
+$(call inherit-product, device/xiaomi/beryllium/beryllium/device.mk)
 $(call inherit-product, device/xiaomi/beryllium/device-common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Product overrides
-PRODUCT_NAME := aosp_beryllium
-PRODUCT_DEVICE := aosp_beryllium
+PRODUCT_NAME := beryllium
+PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := AOSP

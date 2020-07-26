@@ -10,7 +10,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_beryllium.mk
+    $(LOCAL_DIR)/beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_beryllium-userdebug
+    beryllium-userdebug

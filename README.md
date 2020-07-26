@@ -26,7 +26,7 @@ Also Dont forget to take a backup of your images from
 TWRP and copy them to your Host machine. It will come
 very handy. Believe me :)
 
-# How to build and flash aosp_beryllium images?
+# How to build and flash beryllium AOSP images?
 
 * Download source and build AOSP images for Poco F1 (Beryllium) -->
 
@@ -37,7 +37,7 @@ repo init -u https://android.googlesource.com/platform/manifest -b master
 git clone git@github.com:pundiramit/android-local-manifests.git .repo/local_manifests -b master
 repo sync -j$nproc
 source build/envsetup.sh
-lunch aosp_beryllium-userdebug
+lunch beryllium-userdebug
 make -j$nproc
 ```
 
@@ -51,7 +51,7 @@ make -j$nproc
         lineage-16.0-20190612-nightly-beryllium-signed.zip ;)
 
         Then copy the binaries to out vendor directory
-        i.e. out/target/product/aosp_beryllium/vendor/firmware,
+        i.e. out/target/product/beryllium/vendor/firmware,
         and run "make -j$nproc" to create vendor.img again.
 
 * Flash and boot AOSP images -->
@@ -103,7 +103,7 @@ AOSP images again.
 ```
 cd aosp-repo
 source build/envsetup.sh
-lunch aosp_beryllium-userdebug
+lunch beryllium-userdebug
 make TARGET_KERNEL_USE=mainline -j$nproc
 ```
 

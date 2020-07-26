@@ -23,14 +23,14 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 
 PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.aosp_beryllium \
-    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.aosp_beryllium \
-    device/xiaomi/beryllium/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.aosp_beryllium.rc \
-    device/xiaomi/beryllium/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.aosp_beryllium.usb.rc \
-    device/xiaomi/beryllium/common.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/aosp_beryllium.kl
+    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.beryllium \
+    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.beryllium \
+    device/xiaomi/beryllium/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.beryllium.rc \
+    device/xiaomi/beryllium/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.beryllium.usb.rc \
+    device/xiaomi/beryllium/common.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/beryllium.kl
 
 # Build generic Audio HAL
-PRODUCT_PACKAGES := audio.primary.aosp_beryllium
+PRODUCT_PACKAGES := audio.primary.beryllium
 
 PRODUCT_PACKAGES += \
     pd-mapper \
