@@ -64,23 +64,6 @@ fastboot flash boot boot.img
 fastboot reboot
 ```
 
-# Boot AOSP images.
-
-* Touchpanel is not working, but you can connect BT
-  mouse by running following input command sequence
-  from adb commandline:
-
-```
-input swipe 20 2000 20 0
-input tap 300 600
-input tap 200 600
-input tap 200 600 # Scanning for devices here. So wait till your BT mouse appears.
-input tap 400 600
-input keyevent 22
-input keyevent 22
-input keyevent 66
-```
-
 # How to run custom kernels?
 
 * Run following commands to clone the kernel source and
@@ -96,7 +79,7 @@ BUILD_CONFIG=beryllium/build.config.beryllium ./build/build.sh
 ```
 
 Delete all objects in aosp-repo/device/xiaomi/beryllium/prebuilt-kernel/android-mainline/
-then copy build artifacts from kernel-repo/out/android-mainline/dist/ to
+then copy build artifacts from kernel-repo/out/beryllium-android-mainline/dist/ to
 aosp-repo/device/xiaomi/beryllium/prebuilt-kernel/android-mainline/ build
 AOSP images again.
 
@@ -111,8 +94,5 @@ Now flash and boot AOSP images again with your custom kernel.
 
 ToDo -->
 * Brightness Control
-* Touch panel
-* WiFi
 * Audio
-* Energy Aware Scheduler
-* Voice Call
+* Modem / RIL / Voice Call
