@@ -94,5 +94,5 @@ Now flash and boot AOSP images again with your custom kernel.
 
 ToDo -->
 * Brightness Control
-* Audio
 * Modem / RIL / Voice Call
+* Battery Stats
