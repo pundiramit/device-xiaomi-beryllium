@@ -34,27 +34,6 @@ on post-fs
     start pd_mapper
     exec - root -- /system/bin/sleep 1
     exec - system audio -- /system/bin/tinymix "QUAT_MI2S_RX Audio Mixer MultiMedia1" 1
-    exec - system audio -- /system/bin/tinymix "SLIM RX0 MUX" AIF1_PB
-    exec - system audio -- /system/bin/tinymix "SLIM RX0 MUX" ZERO
-    exec - system audio -- /system/bin/tinymix "SLIM RX1 MUX" ZERO
-    exec - system audio -- /system/bin/tinymix "SLIM RX2 MUX" ZERO
-    exec - system audio -- /system/bin/tinymix "SLIM RX3 MUX" ZERO
-    exec - system audio -- /system/bin/tinymix "SLIM RX4 MUX" ZERO
-    exec - system audio -- /system/bin/tinymix "SLIM RX5 MUX" ZERO
-    exec - system audio -- /system/bin/tinymix "SLIM RX6 MUX" AIF1_PB
-    exec - system audio -- /system/bin/tinymix "SLIM RX7 MUX" AIF1_PB
-    exec - system audio -- /system/bin/tinymix "RX INT7_1 MIX1 INP0" RX6
-    exec - system audio -- /system/bin/tinymix "RX INT8_1 MIX1 INP0" RX7
-    exec - system audio -- /system/bin/tinymix "COMP7 Switch" 1
-    exec - system audio -- /system/bin/tinymix "COMP8 Switch" 1
-    exec - system audio -- /system/bin/tinymix "SpkrLeft COMP Switch" 1
-    exec - system audio -- /system/bin/tinymix "SpkrLeft BOOST Switch" 1
-    exec - system audio -- /system/bin/tinymix "SpkrLeft VISENSE Switch" 0
-    exec - system audio -- /system/bin/tinymix "SpkrLeft DAC Switch" 1
-    exec - system audio -- /system/bin/tinymix "SpkrRight COMP Switch" 1
-    exec - system audio -- /system/bin/tinymix "SpkrRight BOOST Switch" 1
-    exec - system audio -- /system/bin/tinymix "SpkrRight VISENSE Switch" 0
-    exec - system audio -- /system/bin/tinymix "SpkrRight DAC Switch" 1
     exec - system audio -- /system/bin/tinymix "SLIMBUS_0_RX Audio Mixer MultiMedia2" 1
 
 on post-fs-data
