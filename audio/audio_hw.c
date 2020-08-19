@@ -40,7 +40,7 @@
 #include <tinyalsa/asoundlib.h>
 
 #define PCM_CARD 0
-#define PCM_DEVICE 1
+#define PCM_DEVICE 0
 
 
 #define OUT_PERIOD_MS 15
