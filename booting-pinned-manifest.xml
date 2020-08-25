@@ -7,8 +7,8 @@
   
   <manifest-server url="http://android-smartsync.corp.google.com/android.googlesource.com/manifestserver"/>
   
-  <project dest-branch="master" groups="default" name="device-xiaomi-beryllium" path="device/xiaomi/beryllium" remote="github" revision="4d30bdd2adcb40715608e58b8ba97c85eb0097c4" upstream="master"/>
-  <project dest-branch="master" groups="device,yukawa,pdk" name="device/amlogic/yukawa" revision="e9501ced9a98c9f8097654cb6e8f9089d6c9c5f3" upstream="master"/>
+  <project dest-branch="master" groups="default" name="device-xiaomi-beryllium" path="device/xiaomi/beryllium" remote="github" revision="77391c37fdf3509d41d3169ce464eeb65461c0e0" upstream="master"/>
+  <project dest-branch="master" groups="device,yukawa,pdk" name="device/amlogic/yukawa" revision="fa4eabbe73a14a3dc39f4a4cd57584443a156184" upstream="master"/>
   <project clone-depth="2" dest-branch="master" groups="device,yukawa,pdk" name="device/amlogic/yukawa-kernel" revision="9bb963db665a0da621f5e9fabcdda4d86d417014" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk" name="device/common" revision="fc5501469b4dae405cfa57f8079ad27d485e11b5" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="device/generic/arm64" revision="a46ed223a7f153dd20fbcaeda109d426d085dbe8" upstream="master"/>
@@ -16,8 +16,8 @@
   <project dest-branch="master" groups="pdk" name="device/generic/art" revision="c182b2e5fe356fb21c9a8b461f7f19f9a9702794" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="device/generic/car" revision="db1f74ede81bff81a3d08ff7fd33173614428eac" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="device/generic/common" revision="b1cb67f6e44fae5e16a1b9b2f01c9f6b0fc89ca3" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="device/generic/goldfish" revision="227372177dc86b424da6c710cd1f9b768d340eb2" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="device/generic/goldfish-opengl" revision="4c34ca6f8f236ac22875423845c303536ecee2c1" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="device/generic/goldfish" revision="f5a17c16ed73823fe7f1573221d3a87be851cd18" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="device/generic/goldfish-opengl" revision="52cbcbe2bb4b1281c5ff8193abd30633b824630a" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="device/generic/mini-emulator-arm64" revision="9ceba60b3bd63579855539b380f79d8997f5184e" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="device/generic/mini-emulator-armv7-a-neon" revision="badf9c65abad10a7d6ca27168001101da850d682" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="device/generic/mini-emulator-x86" revision="540a2a226bd650f6b15339f8432effdd99916b58" upstream="master"/>
@@ -29,19 +29,20 @@
   <project dest-branch="master" groups="pdk" name="device/generic/x86" revision="3f0ca6ed17e03fb19b8a5d3d30cebe4dff50fa19" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="device/generic/x86_64" revision="adccc2135d2c69562be3f8cf45be6849c6cd22a8" upstream="master"/>
   <project dest-branch="master" groups="device,broadcom_pdk,generic_fs,pdk" name="device/google/atv" revision="5142bd21c19b9e7c441ff28e489b2060e8a1c04a" upstream="master"/>
-  <project dest-branch="master" groups="device,bonito" name="device/google/bonito" revision="bd8df1a5f6e4a1c25249cae2278cfe923bd85aba" upstream="master"/>
+  <project dest-branch="master" groups="device,bonito" name="device/google/bonito" revision="a5566fb7473ddb0b6645498029748a53dfcb1d24" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="device,bonito" name="device/google/bonito-kernel" revision="91e41dd6beda7888b8041c16de2ded2352acb2cd" upstream="master"/>
   <project dest-branch="master" groups="device,bonito" name="device/google/bonito-sepolicy" revision="fa39f77f524f0a134a2f53b6559a971ba1b4691e" upstream="master"/>
   <project dest-branch="master" groups="device,pdk" name="device/google/contexthub" revision="71b6e4d0f388b87f1b2fce740547b4c7253ff3a8" upstream="master"/>
-  <project dest-branch="master" groups="device,coral" name="device/google/coral" revision="8469f0acb0d05559fa83cb84aad9478020818851" upstream="master"/>
+  <project dest-branch="master" groups="device,coral" name="device/google/coral" revision="4e8f9a3907f7778284b9c3ecdd3442f64239e856" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="device,coral" name="device/google/coral-kernel" revision="a01b6a0a163a0585a9b520eff97ad500635129b8" upstream="master"/>
-  <project dest-branch="master" groups="device,coral" name="device/google/coral-sepolicy" revision="bf44efd3b63b9feaea550bf03ee034c4a18faa4b" upstream="master"/>
-  <project dest-branch="master" groups="device,crosshatch,generic_fs" name="device/google/crosshatch" revision="05c7132beae42948b5313343e33a89f1d7bfbc8a" upstream="master"/>
+  <project dest-branch="master" groups="device,coral" name="device/google/coral-sepolicy" revision="df1570cfe9de80416653f6de45b88843764b0c11" upstream="master"/>
+  <project dest-branch="master" groups="device,crosshatch,generic_fs" name="device/google/crosshatch" revision="100f06d75b2b5dd64bac45d8c0f8372439955771" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="device,crosshatch,generic_fs" name="device/google/crosshatch-kernel" revision="4ca728d7c1b69959fe4a74964c6d85f7a8a2f666" upstream="master"/>
   <project dest-branch="master" groups="device,crosshatch,generic_fs" name="device/google/crosshatch-sepolicy" revision="b91a03298df80c0e6d52d04ada2e7901ed0528f3" upstream="master"/>
-  <project dest-branch="master" groups="device,pdk" name="device/google/cuttlefish" revision="e80f4a545c60051df30bbc15e392b4f53ee892f3" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="device,pdk" name="device/google/cuttlefish_kernel" revision="d1f215c61e10dbe787095cbd23c524fe7a381306" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="device,pdk" name="device/google/cuttlefish_vmm" revision="693d126429c1b5307a4ab7b6bfc639c60b259f04" upstream="master"/>
+  <project dest-branch="master" groups="device,pdk" name="device/google/cuttlefish" revision="e00b9741edbe9172dfbad931597aa865e51edb4d" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="device,pdk" name="device/google/cuttlefish_kernel" revision="506f698ba7c59cece5c6acecb84a1ba44feeb6a8" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="device,pdk" name="device/google/cuttlefish_prebuilts" revision="047cef4e8b6633dbe7a7971701fd2ea274de92e8" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="device,pdk" name="device/google/cuttlefish_vmm" revision="f532a77f55f3f38c83a95f28c51170a7039a65dd" upstream="master"/>
   <project dest-branch="master" groups="device" name="device/google/fuchsia" revision="b9172e6cf28630eccb3ca9b534e44ad7700f3fe1" upstream="master"/>
   <project dest-branch="master" groups="device,generic_fs,muskie" name="device/google/muskie" revision="4223d690c041237cdac19a9d773a92a5f47fd4a6" upstream="master"/>
   <project dest-branch="master" groups="device,taimen" name="device/google/taimen" revision="18953b49172bc80ca0196d90a3d873b4ab24386a" upstream="master"/>
@@ -52,21 +53,21 @@
   <project dest-branch="master" groups="device,dragonboard,pdk" name="device/linaro/dragonboard" revision="ac5ab76ae185210f5eb94a50d9b7ae96fa81b95f" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="device,dragonboard,pdk" name="device/linaro/dragonboard-kernel" revision="6480d56127bc2240fc3bf0a58d51e32e230efe11" upstream="master"/>
   <project dest-branch="master" groups="device,hikey,pdk" name="device/linaro/hikey" revision="2eb26a27ba926d6c28bc3c96285920fc59b2d632" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="device,hikey,pdk" name="device/linaro/hikey-kernel" revision="7d517262be51b97a7721662aaceed51e0ea2e901" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="device,hikey,pdk" name="device/linaro/hikey-kernel" revision="ab24429a4999c7cbac7edb1695a10ae9a1a5d475" upstream="master"/>
   <project dest-branch="master" groups="device,poplar,pdk" name="device/linaro/poplar" revision="181859a88ffbcd59b0441e77b485421d51c479fc" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="device,poplar,pdk" name="device/linaro/poplar-kernel" revision="d9338d916fee52afdb36115925f2ad570ec0cb19" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="device/sample" revision="74a2895b2ff24d61a3b277a9a5dbf78ab492b78b" upstream="master"/>
   <project dest-branch="master" groups="device,beagle_x15,pdk" name="device/ti/beagle-x15" path="device/ti/beagle_x15" revision="29a8d8c65aa9222b60d3576d2d41afa34b1ebaca" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="device,beagle_x15,pdk" name="device/ti/beagle-x15-kernel" path="device/ti/beagle_x15-kernel" revision="0d99bf0b39100deba5ea9071d6472acb3bc09103" upstream="master"/>
   <project dest-branch="master" groups="vts,pdk" name="kernel/configs" revision="b7f64c852d89a93749f2cb598f7371bc59485227" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk" name="kernel/prebuilts/5.4/arm64" revision="36a8c8b47a948ed4da536a48b08a21502eadc3ab" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk" name="kernel/prebuilts/5.4/x86-64" path="kernel/prebuilts/5.4/x86_64" revision="0bee0ce0a7824443d482049742e1904c6fc1ef22" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk" name="kernel/prebuilts/mainline/arm64" revision="1ce6ec05df2fcf8e6a1d7fdf547095eb567bb0df" upstream="master"/>
-  <project dest-branch="master" groups="vts,pdk" name="kernel/tests" revision="b7769d6474435c70b2be16aeb0ae4e268c840968" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/art" path="art" revision="d9af38a3b76fc54909148456da2701666bade6e0" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/bionic" path="bionic" revision="5ca9a152454ced44a2c79816e0b05a7ed35670b8" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="435a5fc0c288c0134edc597c2297a602602be108" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/build" path="build/make" revision="c4e9bf20ce420e36c075349bbb23ddffffd59363" upstream="master">
+  <project clone-depth="1" dest-branch="master" groups="pdk" name="kernel/prebuilts/5.4/arm64" revision="5dc4b0cd0e241f947f6f07440f2cba7d8264756c" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="pdk" name="kernel/prebuilts/5.4/x86-64" path="kernel/prebuilts/5.4/x86_64" revision="9c131e353cae5912f680d3eca12e6c9fa1ba90ee" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="pdk" name="kernel/prebuilts/mainline/arm64" revision="53ffb6918a4175879942c6b841de030e64e3fc8d" upstream="master"/>
+  <project dest-branch="master" groups="vts,pdk" name="kernel/tests" revision="a01a33a96a3b85e46e65e0ef2e6a93a913a854e2" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/art" path="art" revision="34807565e665dbd43ed10d75782e3dc95ca9fd31" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/bionic" path="bionic" revision="3ec750e035db74f954ee25c5f9f4357490fe2224" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="99277fa6afbb416d9428c3931bd1230c9e78cc15" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/build" path="build/make" revision="ec23cbb7d6359094c7ed5076e205b6f5905e1ddc" upstream="master">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
@@ -75,18 +76,18 @@
     <linkfile dest="build/target" src="target"/>
     <linkfile dest="build/tools" src="tools"/>
   </project>
-  <project dest-branch="master" groups="pdk,tradefed" name="platform/build/blueprint" path="build/blueprint" revision="c69182870e7d940c0d1495b5098701d362baea44" upstream="master"/>
-  <project dest-branch="master" groups="pdk,tradefed" name="platform/build/soong" path="build/soong" revision="91c3e4ec1a902fe6624174125dd08d8e500cc771" upstream="master">
+  <project dest-branch="master" groups="pdk,tradefed" name="platform/build/blueprint" path="build/blueprint" revision="ce522b4826a11265409259a0696c073db20061c9" upstream="master"/>
+  <project dest-branch="master" groups="pdk,tradefed" name="platform/build/soong" path="build/soong" revision="2d815963ba597cce3b2401d405d0ed3a7beb5737" upstream="master">
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
   <project dest-branch="master" groups="pdk" name="platform/compatibility/cdd" path="compatibility/cdd" revision="30d5862b67bc41e5e9fc18253680a09018cbe865" upstream="master"/>
-  <project dest-branch="master" groups="cts,pdk-cw-fs,pdk-fs" name="platform/cts" path="cts" revision="ff404f65ba2aaf91e68c15e83169d198beab768d" upstream="master"/>
+  <project dest-branch="master" groups="cts,pdk-cw-fs,pdk-fs" name="platform/cts" path="cts" revision="d26bff3930fcce0f223bc00ded9bf15531248fc9" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/dalvik" path="dalvik" revision="f9ab924fb79754fba0f45fab7f452f8a9f950715" upstream="master"/>
   <project dest-branch="master" groups="developers,pdk" name="platform/developers/build" path="developers/build" revision="90830880185d521e8f79f2ebb8b4a78c4426a748" upstream="master"/>
   <project dest-branch="master" groups="developers" name="platform/developers/demos" path="developers/demos" revision="03814c35b8ee0a1284c667556260124d97466b28" upstream="master"/>
-  <project dest-branch="master" groups="developers" name="platform/developers/samples/android" path="developers/samples/android" revision="b590b3f07f382430954c0746c06c6366cc735b5b" upstream="master"/>
-  <project dest-branch="master" groups="developers,pdk-cw-fs,pdk-fs" name="platform/development" path="development" revision="38280c6b55aa62a43e19875bd534f6cde55b504f" upstream="master"/>
+  <project dest-branch="master" groups="developers" name="platform/developers/samples/android" path="developers/samples/android" revision="4cd108aef60b847c5797c94d18b22cbbae5df4f8" upstream="master"/>
+  <project dest-branch="master" groups="developers,pdk-cw-fs,pdk-fs" name="platform/development" path="development" revision="4681e0372ab0729efdfddb1de852ac6cb1f15970" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/FP16" path="external/FP16" revision="6321f9ece6de2c375a9a3e9fc5213addee2d187a" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/FXdiv" path="external/FXdiv" revision="dba5619fc6fd63d8ea355879ceabcece683aad81" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/ImageMagick" path="external/ImageMagick" revision="d65c43ff7e19a4a08d4c041d5f30deac688d23eb" upstream="master"/>
@@ -111,13 +112,13 @@
   <project dest-branch="master" groups="pdk" name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" revision="5bde7af22aec08b657b85f41e30395f3a108ab69" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/arm-trusted-firmware" path="external/arm-trusted-firmware" revision="a73922dd3563716cb58944e0585b33dbaf26ff08" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/auto" path="external/auto" revision="8d0c8f812ffa1c0ba1573e4e8c225f9ea874831d" upstream="master"/>
-  <project dest-branch="master" groups="pdk-fs" name="platform/external/autotest" path="external/autotest" revision="a330536eb2be3c6ef6204555d1cb33a3b6de2b7f" upstream="master"/>
+  <project dest-branch="master" groups="pdk-fs" name="platform/external/autotest" path="external/autotest" revision="66451609183b74a978509bccfda174a70f8b20ac" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/avb" path="external/avb" revision="28d0d9d821c75cd54c795cad2c6739a5d3db4d53" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/bc" path="external/bc" revision="77f89687b4c551d58003431962af111160c37028" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/bcc" path="external/bcc" revision="fd247435dfdfe9a6daa159620127f2724f6d1d7a" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/blktrace" path="external/blktrace" revision="d1d8f301c0f97048dbc3431c1a58a6d7313aa153" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/boringssl" path="external/boringssl" revision="ba9db8781ec11859132f543aebff5d6093214751" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/bouncycastle" path="external/bouncycastle" revision="c62b2d68553fbd3c7cd9b9053f812bf36bd9e63d" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/bouncycastle" path="external/bouncycastle" revision="94dddf5cfc9463af22cf92fc495b46d394b34588" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/brotli" path="external/brotli" revision="4bf7087b5c7e33361469ed86c1de90df8450ce88" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/bsdiff" path="external/bsdiff" revision="c62b211329f251ca43d2dcb419384bc747f72944" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/bzip2" path="external/bzip2" revision="a75d53c4bac5db59bad722678f1c231ef2d92543" upstream="master"/>
@@ -133,12 +134,12 @@
   <project dest-branch="master" groups="pdk" name="platform/external/cldr" path="external/cldr" revision="09ea71c1137e922826e9c5d60d3307b8b2b73fef" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/cn-cbor" path="external/cn-cbor" revision="8f258525f7792d5beefa7fdb2ea064f51651f565" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt" revision="e6b2b9154eb8d379dded20d1f9a746b4e993aff6" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/conscrypt" path="external/conscrypt" revision="a5be0101ff50cd616a70e0c586ec05be91bf16fb" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/conscrypt" path="external/conscrypt" revision="8e450f0045c0b20b677e1aa1c394af863b9f7913" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/cpu_features" path="external/cpu_features" revision="22499193e0470a947ed5189cefb9b0537f461fbe" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/cpuinfo" path="external/cpuinfo" revision="aff0604684a8512c65b551c8dc0025919036fc44" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/crcalc" path="external/crcalc" revision="86481d30939166237ecd8d2ebb73ac85da3488ec" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/cros/system_api" path="external/cros/system_api" revision="1f322ad4c14baac5d33033be7f57cb7ef65c8f38" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/crosvm" path="external/crosvm" revision="de72366de2fc1abc06ae6230a48c882f966aff43" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/crosvm" path="external/crosvm" revision="5d1e8e6f23a5fe6cd8afd84834c78cad236ec314" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/curl" path="external/curl" revision="23abcba8890bbe842707ffe8d777aeb50adfd89d" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/dagger2" path="external/dagger2" revision="3ea05b789ebea6b0b1c726cd19600ebf822aa1f2" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/external/deqp" path="external/deqp" revision="ee2101f344ad88ceee4e15ce4afcf2eab2df3c9d" upstream="master"/>
@@ -150,7 +151,7 @@
   <project dest-branch="master" groups="pdk" name="platform/external/dlmalloc" path="external/dlmalloc" revision="86a59f3d28c853ef8b45ee64825d4fd6a9a1b298" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/dng_sdk" path="external/dng_sdk" revision="84de511df4f08157042517717a1162ecb2cf31ca" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/dnsmasq" path="external/dnsmasq" revision="b4504cce43b8013c67ca2052ef5120f4dd89ed8b" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/doclava" path="external/doclava" revision="696f76f1d7a523ae9663ebecd7035e459fe89d19" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/doclava" path="external/doclava" revision="cf31db9702a04ec83e762528cf531eacd8a9f024" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/dokka" path="external/dokka" revision="9b8280a227848c53045cabc5a86cd013d720c63c" upstream="master"/>
   <project dest-branch="master" groups="drm_hwcomposer,pdk-fs" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" revision="37b57553a14517b4be01ea98ff9a165e2d05214f" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/drrickorang" path="external/drrickorang" revision="f1a513d32bbdeaa358991f95a157de9c0a14afe8" upstream="master"/>
@@ -177,11 +178,11 @@
   <project dest-branch="master" groups="pdk" name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="2f294595d964f2b1ae21dfd02ba58e9ee1e839ca" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/fsverity-utils" path="external/fsverity-utils" revision="7b8d3d5ce84e02a3c441ff335c3873a8fa7f1139" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/gemmlowp" path="external/gemmlowp" revision="ca41a583fa4faa3c8fa560c7ce52b2a130519979" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/gflags" path="external/gflags" revision="6827298aeef132e2545279ed2ac5d0b74fa18e7a" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/gflags" path="external/gflags" revision="457196a6b84b7de957569de5b758f4d1d9677d1b" upstream="master"/>
   <project dest-branch="master" groups="pdk,qcom_msm8x26" name="platform/external/giflib" path="external/giflib" revision="efb0f5c4b88455acfcf19f4a42c9bdaa5deb5233" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/glide" path="external/glide" revision="305446b544892451a5fbcfffd481236d175b2a73" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/golang-protobuf" path="external/golang-protobuf" revision="b34db27e38b1b60c83ab7c3a1985203c3f98281b" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/google-benchmark" path="external/google-benchmark" revision="1c12faf75d74e933af10361bb5d264f28dad4747" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/google-benchmark" path="external/google-benchmark" revision="ee5323428dee35fe163daaa3b7bd3ddbc1d9af9b" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/external/google-breakpad" path="external/google-breakpad" revision="ba746a803abbb11df24e35735dfef38f73f3a4b5" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/google-fonts/arbutus-slab" path="external/google-fonts/arbutus-slab" revision="a4585df413033fd56cc9d1be870441f51be3bf60" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/google-fonts/arvo" path="external/google-fonts/arvo" revision="69e476290ceb1a490635253a6c406ca04077e731" upstream="master"/>
@@ -196,7 +197,7 @@
   <project dest-branch="master" groups="pdk" name="platform/external/google-fruit" path="external/google-fruit" revision="59888e7910bfe28018b88b3c6fef2942ac43d381" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/google-java-format" path="external/google-java-format" revision="7aef6bcfd33e998e4cee84f80e0af3c16e864a94" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/google-styleguide" path="external/google-styleguide" revision="c8c1424155e07f3773b731510b08f1dcd5855c76" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/googletest" path="external/googletest" revision="f544b417450b696ea06f7f69686a0d7bfe80d968" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/googletest" path="external/googletest" revision="38e8cf709f2461c458dc487a3455022900af783a" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/gptfdisk" path="external/gptfdisk" revision="f00572f20bf48fb47d90a3d71c1dbd5a7c97f8b0" upstream="master"/>
   <project dest-branch="master" groups="pdk,tradefed" name="platform/external/grpc-grpc" path="external/grpc-grpc" revision="e5624b1eaec69e9c6c27f4c14ed0eb6a126c013c" upstream="master"/>
   <project dest-branch="master" groups="pdk,tradefed" name="platform/external/grpc-grpc-java" path="external/grpc-grpc-java" revision="9297fc3b140d1ab6a9622e51299de75aeee18138" upstream="master"/>
@@ -207,17 +208,17 @@
   <project dest-branch="master" groups="pdk,qcom_msm8x26" name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" revision="ce643e153b5f9179744d1027fad2e274a041a9b5" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/honggfuzz" path="external/honggfuzz" revision="4da5ca807ec753ef0dba496f8db65738084c42bb" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="061d892d99db8594ab858ada1b34ef9935b1c7af" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/icu" path="external/icu" revision="53ddc8d418456df980f1cb77d17e206e60a4a6cc" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/icu" path="external/icu" revision="6e80b01d0cf66d34735d87372d4286fcc6def6d9" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/igt-gpu-tools" path="external/igt-gpu-tools" revision="c231060e4dbd680c770a0682e6b37ee875c0faf5" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/image_io" path="external/image_io" revision="878cbe0d3f24cac6f00905c541b65d0dc0427b34" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/ims" path="external/ims" revision="918a6a4f587aeec2fd71e63bdd106f6d71d1f4c5" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/iperf3" path="external/iperf3" revision="25e8e69eee58ae9cf5e35e4235ac9159d580fa8b" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/iperf3" path="external/iperf3" revision="c5cac7b0eb71ebeb6595f85104ae3a5b24356dbe" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/iproute2" path="external/iproute2" revision="d6e38af5a74427c46e91147f6e39f0ebb11af199" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="956806ac158bf4ac800967adafab9d46273ff0dc" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/iptables" path="external/iptables" revision="5858660f64fa3850aaf4e251b18f032bb7168f99" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/iputils" path="external/iputils" revision="d5f5073532c7d0fc91a331b75684dfb820bf9aaf" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/iw" path="external/iw" revision="c958c9feaeb637ce5a577057350b74c24d011219" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/jacoco" path="external/jacoco" revision="bdbfb7047d87e8e790260a0fffb1afdf37ed3dc8" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/jacoco" path="external/jacoco" revision="d29cfbbb94ce3952e034af105dced62b6fc2c28c" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/jarjar" path="external/jarjar" revision="f5f35e26f783c4a986a2c145d0743a4aa4171a9b" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/javaparser" path="external/javaparser" revision="ae622838617fa95231962c609dfa85b6a7c37d95" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/javapoet" path="external/javapoet" revision="fc695240b7ec6ac465e155b3202dc691527b29c3" upstream="master"/>
@@ -239,11 +240,11 @@
   <project dest-branch="master" groups="pdk" name="platform/external/kmod" path="external/kmod" revision="e62d44322d84833a2cf5b4ee649d65481504b7ae" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/kotlinc" path="external/kotlinc" revision="f301753662be558ac183ea762a89e7450d48e104" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/kotlinx.atomicfu" path="external/kotlinx.atomicfu" revision="fe5a26f975cc0867bf67f58faac0d5100aecde73" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/kotlinx.coroutines" path="external/kotlinx.coroutines" revision="d24bc80ff29c00647d0ea072913d380dad7e2787" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/kotlinx.coroutines" path="external/kotlinx.coroutines" revision="ae6bb483cfaa0a8928e511f18406a5f69ff4fc53" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/kotlinx.metadata" path="external/kotlinx.metadata" revision="44866ae7e2062808c87fa331f17792ade5ea809b" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/ksoap2" path="external/ksoap2" revision="c5e0fcb70cdf6faaf073f7d676aab8184501ac7d" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/libaom" path="external/libaom" revision="49f6f6562feac9be722a11111e0bf44d97310318" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/libavc" path="external/libavc" revision="159799b4d41db730704416ac99614906823f7ff8" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/libavc" path="external/libavc" revision="adfbdd6c41df73d2365baaad9316c9e72e94061f" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/libbackup" path="external/libbackup" revision="3559a596e471ac1082431fc7dc7f23a0598cfd82" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/libbrillo" path="external/libbrillo" revision="a4cec6c21e18b9c18540808d983064d81df00533" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/libcap" path="external/libcap" revision="e0346e9fe5b37a81d111aac0a95ac2a5e4a5c81f" upstream="master"/>
@@ -303,7 +304,7 @@
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/external/mesa3d" path="external/mesa3d" revision="f20360908a5653be4826678cd2b8b471ca98588d" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/mime-support" path="external/mime-support" revision="194d5579b66a8cb867e90fb1cc01c91575bdb11a" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/minigbm" path="external/minigbm" revision="9413c105e4c6ad73ea75819be57d7e5377a5013b" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/minijail" path="external/minijail" revision="81df0664f803a089b9e4055fe75d761fe02ff999" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/minijail" path="external/minijail" revision="75b0c11aa7fe31243d7ed7c98a4abb6e6a2c80f6" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/mksh" path="external/mksh" revision="efb93a535d09dced0c9d563fd0a1760550954184" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/mockftpserver" path="external/mockftpserver" revision="03695f685f192180268ee675f9e57a06f26d2b11" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/mockito" path="external/mockito" revision="370ee71047efd4b30af757307fadff5c611cbd43" upstream="master"/>
@@ -327,14 +328,14 @@
   <project dest-branch="master" groups="pdk" name="platform/external/oboe" path="external/oboe" revision="8f83b55281559392202e2fc04873b6de144fb0fc" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/oj-libjdwp" path="external/oj-libjdwp" revision="091ceb2bb2d4af87e3eb4ccdcfff3ad41db025ca" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/okhttp" path="external/okhttp" revision="c7003d30ef11d6d9845e1b77245365c41392d627" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/one-true-awk" path="external/one-true-awk" revision="7a9e0dfce59f1f8abcdca9cc73f779ccbb9f8d63" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/one-true-awk" path="external/one-true-awk" revision="2aef6cef714686121a677534bd9fb563f92ed580" upstream="master"/>
   <project dest-branch="master" groups="pdk,tradefed" name="platform/external/opencensus-java" path="external/opencensus-java" revision="65f84045ca1d01b0e1851d65e9fd3eb82b9d38f7" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/oss-fuzz" path="external/oss-fuzz" revision="8c011a1095fed0dbafbb53b4ad33f3b15b15d439" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/oss-fuzz" path="external/oss-fuzz" revision="3ca8729c54e29bf21f195b8c2b45e3a46ca2ffb7" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="d05deef05265ed83bf1e34d717d62161a846a87b" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/parameter-framework" path="external/parameter-framework" revision="b89422dfbb19bf8d6a4e6d25c404a6cc7f27dce6" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/pcre" path="external/pcre" revision="594ea567316acea9c34e521e1cbf0d420bf10e8c" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/pdfium" path="external/pdfium" revision="ca58c0ff1a35820edb48190412621e0af34afaa9" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/perfetto" path="external/perfetto" revision="a4cba6578f09d606d32fe32bb0a0c6283ea6d198" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/perfetto" path="external/perfetto" revision="0795384a799723b5b52f8b1adef953710d3eb94b" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/pffft" path="external/pffft" revision="651d7f074901b683784bf148646229d4b218fa27" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/piex" path="external/piex" revision="d26a14360f1b3bb546934467a50039ab09e50ad8" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/ply" path="external/ply" revision="36da259d1145bf2e83b9908a4629768c205f20ec" upstream="master"/>
@@ -381,7 +382,8 @@
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/android_log-sys" path="external/rust/crates/android_log-sys" revision="0d0b5b7f1efc10f2f525a709eff2e3bcf6e8ca36" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/android_logger" path="external/rust/crates/android_logger" revision="b5d680ccbff60e2ae00bb50b8d34aad9b8412cac" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/anyhow" path="external/rust/crates/anyhow" revision="f8b20d96bedb02aa577138d25a9a2803e46e54a6" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/bindgen" path="external/rust/crates/bindgen" revision="1d9a6613078cee7ca9d4339652f00e9017812cae" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/async-trait" path="external/rust/crates/async-trait" revision="d8abf3ddb559744a2be2c96e90262a0b6fd93ec4" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/bindgen" path="external/rust/crates/bindgen" revision="f2e98c258bc79ca0f41719d3ed7cb4aa5311742e" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/bitflags" path="external/rust/crates/bitflags" revision="36d7307a9cff98e3378874daf8a2dc9b1bf72e5c" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/bytes" path="external/rust/crates/bytes" revision="293e2aa580e5695f179507500738a4c8fc65ad82" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/cexpr" path="external/rust/crates/cexpr" revision="b03f87edd6b71e72952539b70c100790b2580778" upstream="master"/>
@@ -405,18 +407,18 @@
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/glob" path="external/rust/crates/glob" revision="12de8ffacea759b2b8058bd52edf99b3bd289860" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/heck" path="external/rust/crates/heck" revision="8bcb1ab79decf46f8602b1f50ffaaa25adda1e94" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/lazy_static" path="external/rust/crates/lazy_static" revision="015d938bc04f7a9d1524099399931a5bb7c9a1cf" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/lazycell" path="external/rust/crates/lazycell" revision="c2da9b8c19fae2731e052f8c4bbda9ad12452457" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/lazycell" path="external/rust/crates/lazycell" revision="6f3fa15012d300a886add4bacbd8ad2267abee28" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/libc" path="external/rust/crates/libc" revision="b3092466bac6f7f00a8019cfb520153a03c496b1" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/libloading" path="external/rust/crates/libloading" revision="e1a834747d201648e0e7e667194dfa0e98c9bed7" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/libsqlite3-sys" path="external/rust/crates/libsqlite3-sys" revision="0b88d5a330abc59cc94ce3e33d85b3a892915a9f" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/libsqlite3-sys" path="external/rust/crates/libsqlite3-sys" revision="ae93c4c77b203617f6fdf5e5e6a0e1fee02caa91" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/linked-hash-map" path="external/rust/crates/linked-hash-map" revision="63a133aab83257e3434efa777a6dfd13c0d98cc8" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/log" path="external/rust/crates/log" revision="029e59774024f812e8cd01728602f1525df0ccb0" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/lru-cache" path="external/rust/crates/lru-cache" revision="64a9d14b0f3709d6c859eb41e46f82f0a2fee62f" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/memchr" path="external/rust/crates/memchr" revision="5497646d768e921000165192435e6280ad7f6e57" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/nom" path="external/rust/crates/nom" revision="ceefd8bbe3d7a06f3dc31e20c852fac4ef779075" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/num-derive" path="external/rust/crates/num-derive" revision="306be67b451090513d26c4211dda60305148accc" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/num-derive" path="external/rust/crates/num-derive" revision="719209521400368efcdccc254097d1213cce788f" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/num-traits" path="external/rust/crates/num-traits" revision="40adaa744d1ec48c4d580d69d53645b718da31ca" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/once_cell" path="external/rust/crates/once_cell" revision="517fe9d8bb8400e7514ff3feb6fe8f451c7768a4" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/once_cell" path="external/rust/crates/once_cell" revision="e42d5d88a8766cdae97bf278ed5e48c5facc2c9d" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/paste" path="external/rust/crates/paste" revision="41177158944274fd37d9160370611a61d68f24e7" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/peeking_take_while" path="external/rust/crates/peeking_take_while" revision="1f1191e14fdddfa4ff77d28c8ba7e514e1a03ecd" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/pin-project" path="external/rust/crates/pin-project" revision="c9e44565a7c05c4325d8de85598fc4ecded70d58" upstream="master"/>
@@ -444,7 +446,7 @@
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/smallvec" path="external/rust/crates/smallvec" revision="1e6392f2309bfdba1424545c48160f3e3073caf8" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/structopt" path="external/rust/crates/structopt" revision="54ad99605fc760bfc7c6d9630615500b18b7d6b1" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/structopt-derive" path="external/rust/crates/structopt-derive" revision="dd4ec24ddb86aef5848addb260cb1a7dcafe718d" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/syn" path="external/rust/crates/syn" revision="7fa13b183f664d3a218ea170d711a349ed87bd98" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/syn" path="external/rust/crates/syn" revision="78585f74ab80d74803148701dc9a089747b5c323" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/syn-mid" path="external/rust/crates/syn-mid" revision="692021126c38792a9b20cc341372e07d01b3c450" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/termcolor" path="external/rust/crates/termcolor" revision="add50e0e3e88504ec0ff8264f78f9412dde78fc0" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/textwrap" path="external/rust/crates/textwrap" revision="32c95abc5aa5dd6b284630f8d6e7eee5b8cf0213" upstream="master"/>
@@ -455,7 +457,7 @@
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/unicode-segmentation" path="external/rust/crates/unicode-segmentation" revision="8b3a22af4d97e960b0e1e1d384d93ba43bb711e6" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/unicode-width" path="external/rust/crates/unicode-width" revision="085eaa2d16aebcbab96208ad4116278944de7c4d" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/unicode-xid" path="external/rust/crates/unicode-xid" revision="fed503e5e9b6c600a7b625e1d9ba60ad201b37b6" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/which" path="external/rust/crates/which" revision="8b6eb89f36d32d6c35dea1710c284856b67b9293" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/rust/crates/which" path="external/rust/crates/which" revision="e92abd30fa7f0b5a710c5b5ee30052f63efffb33" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/rust/cxx" path="external/rust/cxx" revision="073210719e1cf8f5aa00cfb5ce875a8c04926877" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/external/scapy" path="external/scapy" revision="1c94e2d5bb85cb4902bb1e3a5795e86999525b97" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/scrypt" path="external/scrypt" revision="4436f99cac9d4626e465260e8aad6a0ff8aed2cf" upstream="master"/>
@@ -468,7 +470,7 @@
   <project dest-branch="master" groups="pdk" name="platform/external/shaderc/spirv-headers" path="external/shaderc/spirv-headers" revision="b8530f4af8fa45712a2c869b0ebb81f2c5be0969" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/shflags" path="external/shflags" revision="3dac286b93162f3ea66f52c2f4dd094c87fd755b" upstream="master"/>
   <project dest-branch="master" groups="pdk,qcom_msm8x26" name="platform/external/skia" path="external/skia" revision="efdb3fb8a591beabdea4aa9240b3a6c9e10567c4" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="cts" name="platform/external/skqp" path="external/skqp" revision="25bec16283807e794c3425dcad8ee81c669faa6b" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="cts" name="platform/external/skqp" path="external/skqp" revision="4a4c793f123f00290abde4c0bc58e2dc3d64507d" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/sl4a" path="external/sl4a" revision="e68776ccc6a32da8806b30eb8fe26465c7d580e9" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/slf4j" path="external/slf4j" revision="ba26eda702513d3c4594b9a3e8ea71849dd7de86" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/smali" path="external/smali" revision="2da1720fb501e38495e342882f83bdafdf9ec812" upstream="master"/>
@@ -492,11 +494,11 @@
   <project dest-branch="master" groups="pdk" name="platform/external/tinyxml" path="external/tinyxml" revision="74d07fafdc71a85d30f57c24bec44a51b8d6b1ad" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/tinyxml2" path="external/tinyxml2" revision="0ad38bb14c0bea2bcfda371bdceb5627350e417e" upstream="master"/>
   <project dest-branch="master" name="platform/external/toolchain-utils" path="external/toolchain-utils" revision="b8e15db27661a92ec12ae2af66bc6987929c87f8" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/toybox" path="external/toybox" revision="4443a9f2a5a005e71bc077525a0eb499efee01ae" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/toybox" path="external/toybox" revision="6fb6646ca8fa41a0e83113b9f0da371c1a5586fb" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/tpm2-tss" path="external/tpm2-tss" revision="13b6223a586bc61841018c824cfba6fd99fc9071" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/tremolo" path="external/tremolo" revision="cbac9982e2dbf03f430eb23cdbc274927cd56be2" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/turbine" path="external/turbine" revision="b4330c4fd8d6e2d0c996d61561bbda575f8ec362" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/u-boot" path="external/u-boot" revision="c3eb0fd9cb76f9f6f52c7e74d47d558a510b834e" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/u-boot" path="external/u-boot" revision="5f46e00cd019a88bf83f0937f6c8f967b6032419" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/ukey2" path="external/ukey2" revision="85debd146d63e58dfefea5b5392d7b988ee8149d" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/unicode" path="external/unicode" revision="14a6c6a89cd98d7946b087cac82307e22fc5f810" upstream="master"/>
   <project dest-branch="master" name="platform/external/universal-tween-engine" path="external/universal-tween-engine" revision="b2ad896a29d685f14252f1cea90304d98cf1151e" upstream="master"/>
@@ -512,7 +514,7 @@
   <project dest-branch="master" groups="pdk" name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" revision="28f8a95f08b8aa4a9f4ccad4096736b50e283473" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/walt" path="external/walt" revision="b45616374afe02fc04da21636503d034c9c8c8dc" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/wayland" path="external/wayland" revision="cd6809020da4436724334ebb18acbd90ecad46a1" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/wayland-protocols" path="external/wayland-protocols" revision="dad011780d0d848ee3c9135b1be25fe4d065ea7b" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/wayland-protocols" path="external/wayland-protocols" revision="6cef0c58dfb1a8acfc0ad196183c6394f4dd1983" upstream="master"/>
   <project dest-branch="master" groups="pdk,qcom_msm8x26" name="platform/external/webp" path="external/webp" revision="e1bc8b4508110e89aee708f04af91ce5421fb4cb" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/webrtc" path="external/webrtc" revision="081f2a69ce6cc56d2c25108cce6318667db5e8ff" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/webrtc_legacy" path="external/webrtc_legacy" revision="19e0be551bfc707c791c823c48f16a3091f7518f" upstream="master"/>
@@ -522,24 +524,24 @@
   <project dest-branch="master" groups="pdk" name="platform/external/xz-embedded" path="external/xz-embedded" revision="ff3dce8e7f46fa2283e15f8048caa4b00f45d896" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/xz-java" path="external/xz-java" revision="bd7892bb8927360cd34805bc332039154a2110e0" upstream="master"/>
   <project dest-branch="master" groups="vts,projectarch,pdk" name="platform/external/yapf" path="external/yapf" revision="10b199108ab23e5658c35197164c6bec93352070" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/external/zlib" path="external/zlib" revision="28320305b90e717b351c5538358a840ec3620bc0" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/external/zlib" path="external/zlib" revision="89958eeb179d8af0f8dcfb844dbcfeaba1cf1c9a" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/zopfli" path="external/zopfli" revision="b481a8f686da1cb148ff09eb10ca02198c6bdb49" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/zstd" path="external/zstd" revision="da821d773bfbad63841ecf7a765d56d19acfe47d" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/external/zxing" path="external/zxing" revision="dcb3fa2622a5aab0fc99fcf044e6ec64131ee4fc" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/frameworks/av" path="frameworks/av" revision="853e7579b42d5b878d8c5d559fc45f223f4b9813" upstream="master"/>
-  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/base" path="frameworks/base" revision="38edcd001afbf3185186c4366454bd8739331fc6" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/frameworks/av" path="frameworks/av" revision="c961cd4d0cdf8370120eef385e80636a65a3b1c7" upstream="master"/>
+  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/base" path="frameworks/base" revision="c235669ec270d4d967c6476cc72080a0d1fae10e" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="24835798f62ff404162ad5308248743e5fdc9d68" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="a4d0f51e53d28a88450c574f118ca73cc311d7e9" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="c7da5c24dcdb929500d5b76da94e80ab096c9f36" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/ex" path="frameworks/ex" revision="d535f66f7e026f0bb19aaa39b91d83e05bd4b0ff" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="64a531c6a283fa027abf5cca6c70e323297220c8" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="7e3df3631735053ae1a945cd5baed109a743b93f" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/frameworks/libs/native_bridge_support" path="frameworks/libs/native_bridge_support" revision="3414fdb1c586f30b8a6cd6517323c6eac943eb43" upstream="master"/>
-  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/libs/net" path="frameworks/libs/net" revision="96027df8a444f8a63d816018bd12db05a761bdbb" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/frameworks/libs/native_bridge_support" path="frameworks/libs/native_bridge_support" revision="f3b3bf0d443aec7b758fb1e52d2e896d4cebcce7" upstream="master"/>
+  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/libs/net" path="frameworks/libs/net" revision="fe3769363224ec2833d6aba60ce5ba5a972cff74" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/minikin" path="frameworks/minikin" revision="485f24291298efd5cecf5c0a9898a35ba241e0b0" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/frameworks/ml" path="frameworks/ml" revision="45482cbe28e51051740b30b3091c8f0b43f891a8" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/frameworks/ml" path="frameworks/ml" revision="ebca286fc39af4156163c9496a05e7645845cdd1" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/multidex" path="frameworks/multidex" revision="70cd958708d114be38febd015485f582f1165bee" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/frameworks/native" path="frameworks/native" revision="52e3b47cae759317fb4a87df25568b897b132585" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/frameworks/native" path="frameworks/native" revision="b219f6ed05dbb71cf3a4f9a6d725e7519dbfd4ac" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="e9850af1278e499e427d08dbf40244f3622bd6db" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="1aea8315ebe9cca6e9462ab02e9f4caf20c8cd58" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/frameworks/opt/car/services" path="frameworks/opt/car/services" revision="e01e933a67ce40bdb266b4cf2c6a63036132958a" upstream="master"/>
@@ -547,15 +549,15 @@
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/chips" path="frameworks/opt/chips" revision="e337b2037dda34bb2a2c98d01c8b6ea18cc8179a" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="e3c6e799edbff3f633f03f0f0f394a74b2065d36" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="67c1ef1f1ff26cbf02dbb880ab7d27f06f7188cb" upstream="master"/>
-  <project dest-branch="master" groups="frameworks_ims,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="c41c0c299c0d3c538a72af04c044bbf079ae6dd0" upstream="master"/>
+  <project dest-branch="master" groups="frameworks_ims,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="e353042a75d239d1ecf790006890ba0c13d592a1" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="db05c2d7a83409b50e45cbc75c50497d46aececf" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="287b7337f73fc2b4d6d8a5fb45c3c3b375670c64" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="c250535f2ec9716d9bd3bccd6cc87dd2fa309277" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="481c220b0b15b5ab5808e4f0d648333c9b772307" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="bc9bd7ef27dda3af2261698963ae3c05f2de3b28" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="889980a0820dda2d2ba8ff7f850edad8b6b38c78" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="3b85bbb68431e734ea266499053661f1c7734564" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="d2dde212b349a1088ad9a4f064f3c7fca50f62f3" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/frameworks/rs" path="frameworks/rs" revision="1ad73cc08f1ce79028ffa11512519988ae3a26de" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/frameworks/rs" path="frameworks/rs" revision="a3d1389579086f4463e42b4078ef3cdfc53955d1" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="7d70963364a3f9d42553e36b40c544c581ae90b9" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" revision="588bb9ac1d205fe7dbe132eb14589adda92a7cf6" upstream="master"/>
   <project dest-branch="master" groups="pdk,broadcom_wlan" name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" revision="ef6b231056bb1bdcea293429c939d6c4396714f0" upstream="master"/>
@@ -565,7 +567,7 @@
   <project dest-branch="master" groups="pdk" name="platform/hardware/google/interfaces" path="hardware/google/interfaces" revision="b1e4020a6a53e9face5bd93bc89ae59c98803bab" upstream="master"/>
   <project dest-branch="master" groups="generic_fs,pixel" name="platform/hardware/google/pixel" path="hardware/google/pixel" revision="7a489f84aba93b2f6da99afabd6554045f6252bd" upstream="master"/>
   <project dest-branch="master" groups="generic_fs,pixel" name="platform/hardware/google/pixel-sepolicy" path="hardware/google/pixel-sepolicy" revision="cf569344b8ae43dc41a50f4cfdcd1c465cc62828" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/hardware/interfaces" path="hardware/interfaces" revision="4a91699105dabfc1b267099c66e9214b1ed77839" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/hardware/interfaces" path="hardware/interfaces" revision="898088df756ad0904a1c9defada6af7e72d0d2bb" upstream="master"/>
   <project dest-branch="master" groups="invensense,pdk" name="platform/hardware/invensense" path="hardware/invensense" revision="52e51c22ac7e111fad6e6e8e175bfe0e486f4979" upstream="master"/>
   <project dest-branch="master" groups="coral" name="platform/hardware/knowles/athletico/sound_trigger_hal" path="hardware/knowles/athletico/sound_trigger_hal" revision="8baad7126a217ecc0f796c6ec009f270ced860f6" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware" revision="a1a6f9e8196f90c6c0b5415fd8df086e3bf1c70c" upstream="master"/>
@@ -612,17 +614,17 @@
   <project dest-branch="master" groups="qcom_sm8150" name="platform/hardware/qcom/sm8150/vr" path="hardware/qcom/sm8150/vr" revision="a3b38e2ced79c2098ab6418dac4e8c7c1ebe4b0d" upstream="master"/>
   <project dest-branch="master" groups="qcom_wlan,pdk-qcom" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="64500046a97842203e8a912257657753d24f7fe6" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/hardware/ril" path="hardware/ril" revision="d0412127b790c90a6e3b64f29691854ce19a321b" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/hardware/st/nfc" path="hardware/st/nfc" revision="d51c023419f00dca3d750f14c8425a7b7b8a4655" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/hardware/st/secure_element" path="hardware/st/secure_element" revision="2fd6e665fbeefccbd060f69c7dd42108e309e8ab" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/hardware/st/nfc" path="hardware/st/nfc" revision="533fa2095bfd9f172e4ce87500c13e7e99ffaec1" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/hardware/st/secure_element" path="hardware/st/secure_element" revision="3a79f6486d83149135c8488d4a40af8696bd2ab2" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/hardware/st/secure_element2" path="hardware/st/secure_element2" revision="bb2b822e1a815314c16ee86c2d6f3aa02b474731" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/hardware/ti/am57x" path="hardware/ti/am57x" revision="09c67206f6cb889e4c661f7f4dd6f847a0d88f47" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/libcore" path="libcore" revision="231e4fee087d98fcf0d4cbc093776bf364cf65f9" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/libcore" path="libcore" revision="4c48727984fe1fdaf409a004bf224c4954d79414" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/libnativehelper" path="libnativehelper" revision="84e576a16b5d21b1cfb875623e03bdff5f96924c" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="0805f0c123bd84ca454eb375e90fa2313a69a8c5" upstream="master"/>
-  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="80a6c4d7ba21d14efbab06e77c4c6c5c342c115f" upstream="master"/>
+  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="3ad8eb5fd61b909c984100a4df0b3c0d9b75263c" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="8a68fdaf045848376f2e31a645fb3970868842ad" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Calendar" path="packages/apps/Calendar" revision="27e95b5dbf44bcea7ae529c68bf8d3d8d4cf2820" upstream="master"/>
-  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Camera2" path="packages/apps/Camera2" revision="d36fa085d6acb9976a2c3810eceef92c5daba9e1" upstream="master"/>
+  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Camera2" path="packages/apps/Camera2" revision="a4b36bc9e466ba0a2217d70ce7eedfc0e1282262" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Car/Cluster" path="packages/apps/Car/Cluster" revision="7e1ad61d9e8984f90ca7cb139df4430e9d7fbcf0" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Car/CompanionDeviceSupport" path="packages/apps/Car/CompanionDeviceSupport" revision="68538c52302c4670060cf68120da97c17f925158" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer" revision="96e42e0112a724b3b415f91b940fac1dc5148f3d" upstream="master"/>
@@ -640,13 +642,13 @@
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" revision="093b18b3a60bda7b709b355454edf70ccd130914" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Car/Stream" path="packages/apps/Car/Stream" revision="65fcbceb6cadefcd715b7b61c0d08c8279408343" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" revision="ad64abe7c7ada0deca3d861a68d72ca770b333ff" upstream="master"/>
-  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="d62248733f5b4dceba8060dc270917e07398614d" upstream="master"/>
+  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="91a0d389b9913f9742ec219fd7f1eadf7e30f236" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Car/tests" path="packages/apps/Car/tests" revision="fe3429af80780990e3961c83d5eb5bf16273af1d" upstream="master"/>
-  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="8baa947fcbbe360cd05e448b72d66a4b4d3ea377" upstream="master"/>
+  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="6abcff772ad49f3b088ebd0a13579b47444f320b" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="36813e59e5fc918695531612032fc6640db1f847" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="d557f0e7a2c0cfa56bf621280e38e9027ef17fa5" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="19cb7ef58040ea32453f8165f23b5e537a210170" upstream="master"/>
-  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="48a948b295c7927825f3b4e74826dfb8419595b1" upstream="master"/>
+  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="c2a45bc05211f6483a33bfa2889444e50cfb1765" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" revision="1b84f1f7fce56aae85e58d435b686d946c1f5f07" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Dialer" path="packages/apps/Dialer" revision="237d9b014c5d74a58c688abb9a9328f3b11ef689" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI" revision="707f67150657020becaad9d5da87e290d085fb80" upstream="master"/>
@@ -656,12 +658,12 @@
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="ad709f9d80fc5b84d93b691806651e9b6f2ca194" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="7c0c35442fb278c7d63c95718af5224fdc36f5d1" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="af6968dcec96966e84608d9dd30a7e379cb1993b" upstream="master"/>
-  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="79a62e3c6663c3a69a4e2792c625730970046763" upstream="master"/>
+  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="eae789959845b039734aabc3b510a9d93aec3f1b" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="6e1d96a6315ba2bbebd4853ce1150d4e6a55d767" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="4b52654e98d9fee9f99053db1be535917673fa45" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Music" path="packages/apps/Music" revision="48d693371635dd483f35d5f151599d4a92625fb5" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="db9d2df722a9edc949a54540ddc8815cb692ea70" upstream="master"/>
-  <project dest-branch="master" groups="apps_nfc,pdk-fs" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="e919a6ff0dab23eec9fb107ddc736711fd9299ae" upstream="master"/>
+  <project dest-branch="master" groups="apps_nfc,pdk-fs" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="f93aaf28028f6cd03e53566089a027d59bbe418f" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="9dd324bae9cdc1e608680873653c767107a687a3" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/PackageInstaller" path="packages/apps/PermissionController" revision="7dec5617a56fe3c4bf6f56a2ff6b91572f185145" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" revision="6f9878dc58b9561b0ab2fff040e24cd3ec7d4ae4" upstream="master"/>
@@ -671,7 +673,7 @@
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" revision="db3edb6f3531446f9aa234631d6697f148bc0623" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/SampleLocationAttribution" path="packages/apps/SampleLocationAttribution" revision="e2f9e0754772bd122adfd8d06756e22ed9305d1d" upstream="master"/>
   <project dest-branch="master" groups="apps_se,pdk-fs" name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement" revision="a05bb069e22abd4db7c14650d79d2ead3867c827" upstream="master"/>
-  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="99a7c3ef0031272872c4520e986eb00737c7fdca" upstream="master"/>
+  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="33e49718203b36b82ec46f7798456b1043109d38" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence" revision="9c7a808ea96fd072e1fd68b4bcd1733f8ff4a3b2" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="fd4351c6184d37684020481795248fdcb37d8ed8" upstream="master"/>
   <project dest-branch="master" groups="apps_stk,pdk-fs" name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="2708362895220a5803f8987ab5b8a9b2a4fa5e9c" upstream="master"/>
@@ -683,23 +685,23 @@
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/ThemePicker" path="packages/apps/ThemePicker" revision="a66d3ffcbff158f0eb0482741348b8c3ccc99dd0" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/packages/apps/TimeZoneData" path="packages/apps/TimeZoneData" revision="9d6fa58ffc0ab23a75e092b3fe4b92170a5e481e" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/packages/apps/TimeZoneUpdater" path="packages/apps/TimeZoneUpdater" revision="88da0bd35394bb4ffc5de8167e6a2b9d060c1686" upstream="master"/>
-  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Traceur" path="packages/apps/Traceur" revision="996d5c31a8f741604a81e862f3ada9c762de5137" upstream="master"/>
+  <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/Traceur" path="packages/apps/Traceur" revision="90e1f0a466bdc8c01fdc21cc5453ccc61a5aaf50" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="8dd83d670f1b4b28d434bb2086ea713ac529c65d" upstream="master"/>
   <project dest-branch="master" name="platform/packages/apps/UniversalMediaPlayer" path="packages/apps/UniversalMediaPlayer" revision="b82ed64e09ef725b0c675f3fc30296c4844befae" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" revision="4292a37c4b9d746fff958de315604aa957361314" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/apps/WallpaperPicker2" path="packages/apps/WallpaperPicker2" revision="a84f0b107f606a98adb857e35b1e71efbdee3200" upstream="master"/>
-  <project dest-branch="master" groups="pdk-fs" name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="b01f678ca850d970f1bd47fd7e4a6aeacd72f3af" upstream="master"/>
+  <project dest-branch="master" groups="pdk-fs" name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="33fa7e7126d266594322324ab56a048fdafdd895" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/inputmethods/LeanbackIME" path="packages/inputmethods/LeanbackIME" revision="38afee1136642059a6c3d23a6bc38b0786ad29ff" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/packages/modules/ArtPrebuilt" path="packages/modules/ArtPrebuilt" revision="491a40e7de77dac8666f05aab45e6e71e57ceb49" upstream="master"/>
-  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/modules/CaptivePortalLogin" path="packages/modules/CaptivePortalLogin" revision="e59c09d1ef1ce3123810b2d81428e15e7a1ad7c9" upstream="master"/>
+  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/modules/CaptivePortalLogin" path="packages/modules/CaptivePortalLogin" revision="b032f4657927b37c7a43a514cc181d1482f0ceec" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/packages/modules/CellBroadcastService" path="packages/modules/CellBroadcastService" revision="26848c5022821a557cd36e9a5a567cf76e6f25f7" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/modules/Cronet" path="packages/modules/Cronet" revision="f22adf20638c1b564bfd9766ed5aabf23a1aab9b" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/modules/DnsResolver" path="packages/modules/DnsResolver" revision="957333d2a99861bc9e01a96605a6de1f4ea4cabd" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/modules/ExtServices" path="packages/modules/ExtServices" revision="c2bf02c01f3d40f79e35f9bc1002609a7904e726" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/packages/modules/IPsec" path="packages/modules/IPsec" revision="2919154036bde631b05270575c83a8fbfc287f43" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/packages/modules/IPsec" path="packages/modules/IPsec" revision="fdbaa935af6b7bb2d2a90ff613cba73104578c29" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/packages/modules/ModuleMetadata" path="packages/modules/ModuleMetadata" revision="bf198f3182e53f3d1dc9d061f558656e59f5d4c8" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/modules/NetworkPermissionConfig" path="packages/modules/NetworkPermissionConfig" revision="8cfa62762bf2eab1194ba8828be46a1fbd7087f9" upstream="master"/>
-  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/modules/NetworkStack" path="packages/modules/NetworkStack" revision="10d27abfbbeae891974f6663f4dd7e29e314ffd1" upstream="master"/>
+  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/modules/NetworkStack" path="packages/modules/NetworkStack" revision="84ba8158e6b148b9693b63f3e6aa61ef4a3c84bc" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/modules/RuntimeI18n" path="packages/modules/RuntimeI18n" revision="8d6fa86372699b438f66a94ec857f46c4139bbdc" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/modules/SdkExtensions" path="packages/modules/SdkExtensions" revision="a6caee837fb07a59121a9fe4ae5c72649daf9e42" upstream="master"/>
   <project dest-branch="master" name="platform/packages/modules/TestModule" path="packages/modules/TestModule" revision="3523a2f0f9b12d4e60374af63aae14f75a2b4c10" upstream="master"/>
@@ -721,23 +723,23 @@
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/BuiltInPrintService" path="packages/services/BuiltInPrintService" revision="c4037b2aa4dedc03622713496a28ef83fbe51655" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Car" path="packages/services/Car" revision="a3f7a56d18bed201bee5238a5f23846b005bba71" upstream="master"/>
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Mms" path="packages/services/Mms" revision="ab712c6fde98c0f36f421e272f196d7a30a59b7d" upstream="master"/>
-  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="68518e59947b8b70b8ef235cba8fd0f6a6aad1f0" upstream="master"/>
-  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="d15d4e41a8b8cd6d5f1c0abf20b4c8479a1447a3" upstream="master"/>
+  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="f5c472432edb4162f2348c48d7c5ecb5e2ac59d5" upstream="master"/>
+  <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="93e359105a56c9d7b3d60077bd41b50e67b1a4fc" upstream="master"/>
   <project dest-branch="master" groups="pdk-fs" name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="2c4affb0eba4131177de2de0650a74d3e6aa4a2b" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/pdk" path="pdk" revision="59deedc9c468ce8ae0f10e9c30742fd6f3ac82b7" upstream="master"/>
-  <project dest-branch="master" groups="pdk-fs,pdk-cw-fs,cts" name="platform/platform_testing" path="platform_testing" revision="86753ee38edc57dcf2eb621b472bd331d6162f80" upstream="master"/>
+  <project dest-branch="master" groups="pdk-fs,pdk-cw-fs,cts" name="platform/platform_testing" path="platform_testing" revision="a5efb6c33d4b014dc94ae47d2efc820e65f6e59e" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk-fs" name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" revision="5b84cd00adaf8366cc20bb97a2feef63433e3bfd" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk-fs" name="platform/prebuilts/abi-dumps/platform" path="prebuilts/abi-dumps/platform" revision="3a423764c3627dc79985b47111de8f77c7ce0aad" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk-fs" name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" revision="be13f0398e1ead68e288502d86fb078cf999b688" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk-fs" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="fea18b6695bad591306822d6b031f7ffed3fe932" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/asuite" path="prebuilts/asuite" revision="f2e114011cbdbba34b11800600ffbcb3bb33e556" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="dadcd34e041d578f03cc95606d659fd2b7d06024" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/asuite" path="prebuilts/asuite" revision="e43c151008c004e382605cd3408a749148ed4ba3" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="3bca6cc2355b9b0d20d805c2f1584c0bda0deca6" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/bundletool" path="prebuilts/bundletool" revision="c6cc587801a6c70796809842c1970a374fc22883" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" revision="8740e7ad190a24e7692d6aae424e81c85a7292bc" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" revision="f3179e75784f9551d648e9035944b36569e017a9" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" revision="ec7e496bac97241dc9c26d44ca71df66e2b26f20" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk,darwin" name="platform/prebuilts/clang/host/darwin-x86" path="prebuilts/clang/host/darwin-x86" revision="b40fb300258802b9a6c56ce0d33ca8dfd3e665b1" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="8539e6c8e61390f065090d1a1c04ec95107c8621" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="pdk,darwin" name="platform/prebuilts/clang/host/darwin-x86" path="prebuilts/clang/host/darwin-x86" revision="547455074672830267fb589de999e4da373cdd9c" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="2b4f5374e276d6f28776e52e0c2e13da4a59788c" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk-fs" name="platform/prebuilts/cmdline-tools" path="prebuilts/cmdline-tools" revision="1b7d724e36df1caab8b6bebbdd0b379eef8d6f69" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk-fs" name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="bc11a72a91685bb0a35e7ecf10ffcba4e07558bd" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk-fs" name="platform/prebuilts/fuchsia_sdk" path="prebuilts/fuchsia_sdk" revision="12c41f24a38aefda3c5dda0dd513945b616cd765" upstream="master"/>
@@ -754,8 +756,8 @@
   <project clone-depth="1" dest-branch="master" groups="pdk,linux,x86" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="6d6c9c7e26cf86eafd41b9e73840c7f8d50d1027" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="darwin,pdk" name="platform/prebuilts/gdb/darwin-x86" path="prebuilts/gdb/darwin-x86" revision="284b55fac5598bcd1f986e69b7556befdd663c53" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="linux,pdk" name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" revision="9453bfa625bc14025e6aa50dc296dd82ebbfb8c6" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="darwin,pdk,tradefed" name="platform/prebuilts/go/darwin-x86" path="prebuilts/go/darwin-x86" revision="4fc930dc420b9dc5034415f50726b938d32ac5fe" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="linux,pdk,tradefed" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="1cc20d34d0e35a919285741c1c907a10bb78a798" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="darwin,pdk,tradefed" name="platform/prebuilts/go/darwin-x86" path="prebuilts/go/darwin-x86" revision="7e58022756e3db8539d65ed6ada2301013e541ae" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="linux,pdk,tradefed" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="0aa53c02b476bef658d40a7d25e7d87e6ac7b4f1" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="69b1878569e5c592e009808ae7fa6e303db2c78e" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/jdk/jdk11" path="prebuilts/jdk/jdk11" revision="e4fb089b45a6633baf0233e2c524d614ed7355f1" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" revision="74e4f1844dfa9b8df9e0fe2ff34a2ecc24d52b07" upstream="master"/>
@@ -764,17 +766,17 @@
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger" revision="c61778dd7fdef4194cf8592f9d4a7ead9bb16811" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="ecc2406087855bedf2d8e8e528ab0b2b4e6c7298" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="52359d0baa6af2c033f5ee57c8fbb3f51deb734e" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/misc" path="prebuilts/misc" revision="8430fec9bf77c601284583665d9fae3d514cf0b4" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/misc" path="prebuilts/misc" revision="38dd4031c292bd46d7dc9d415a01d16f90af1a62" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/module_sdk/art" path="prebuilts/module_sdk/art" revision="0a68152386e56eab7fce3813aca01301e197b17b" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="f5538578aa305b4764283b729b10b3c31a15a558" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="934d8bf262b73da100476384028b6a46aaa305a2" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="darwin,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/darwin-x86/2.7.5" path="prebuilts/python/darwin-x86/2.7.5" revision="0c5958b1636c47ed7c284f859c8e805fd06a0e63" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="linux,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="53add29eb7b4eaa9e128e3ec84eac9e65cf4c986" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="19b60d18119b92db7ba784573badd6e26c333e03" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/r8" path="prebuilts/r8" revision="3ebd66e92a1986e1a018f28c2bbdf8b4705dd076" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/remoteexecution-client" path="prebuilts/remoteexecution-client" revision="2c905992ecdcd6c44357cf326e96dc9afc154bd8" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/r8" path="prebuilts/r8" revision="b10a7d6e5761e70636791a557fcdd2480a0db110" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/remoteexecution-client" path="prebuilts/remoteexecution-client" revision="b1e05301fd67d5ef76e94cb81d6eb62589ce4412" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/rust" path="prebuilts/rust" revision="765d27cdd93fb86280c2c8e5a85fde72073a6c8f" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="c0f0e221d2d4a0e0b383d576a3d4c2002234b3f2" upstream="master"/>
-  <project clone-depth="1" dest-branch="master" groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="f5463ac0726032c647ec02f6e66a36625142d18d" upstream="master"/>
+  <project clone-depth="1" dest-branch="master" groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="0a900a446b902d26c595920850a61fc839d74268" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/vndk/v27" path="prebuilts/vndk/v27" revision="0f6002bffc84a181b476f07f1d1491aacffa8924" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/vndk/v28" path="prebuilts/vndk/v28" revision="2569adfe06033d1758f37e33b5b50e57e2aabd44" upstream="master"/>
   <project clone-depth="1" dest-branch="master" groups="pdk" name="platform/prebuilts/vndk/v29" path="prebuilts/vndk/v29" revision="da70d9a2d97c65571f1fa353c221afdef2da081a" upstream="master"/>
@@ -782,94 +784,94 @@
   <project dest-branch="master" groups="pdk-cw-fs,pdk-fs" name="platform/sdk" path="sdk" revision="7cb6fc634a03afec776a03f2543185908b3563b0" upstream="master">
     <linkfile dest="frameworks/support/README.md" src="current/androidx-README.md"/>
   </project>
-  <project dest-branch="master" groups="pdk" name="platform/system/apex" path="system/apex" revision="f840a81213926bd091cd0afbae125a347fe7ccea" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/apex" path="system/apex" revision="2ecee5e166ac2d41ed18926ad336b1ff349c5401" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/bpf" path="system/bpf" revision="21f34cb32c0f2a3bafd66ef97919989c780ce31c" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/bpfprogs" path="system/bpfprogs" revision="beed480907f887e655f4c4ba52f30e688c54eae3" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/bt" path="system/bt" revision="270ce5131651b39357dd8aafced60d91fe89d9f7" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/bt" path="system/bt" revision="8cdd04d95049bd1fbb3032e1a5ac6c2ecb30541b" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/ca-certificates" path="system/ca-certificates" revision="1bfb2b42158b24a1d30fc2fab0728e74c03aa332" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/chre" path="system/chre" revision="078afe6d04d9afc83d0e9608d28136a0fb69719e" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/chre" path="system/chre" revision="1bee77d9ea7fc33a103e0a6cdea04b366021b4a7" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="0bcc0e4488989dad285c7664b4cdaa6eaad666d4" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="6b125d3435b4e931934306a866bb591bb67dce14" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/core" path="system/core" revision="52c8422ea19b5719f8128b85fb01d985bd415c46" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/extras" path="system/extras" revision="131bc0ee8916b1fa1b31ac240c320483c82cea5b" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/core" path="system/core" revision="d7cb6e1fd098af49354ad242e5ac01b9d95e34dd" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/extras" path="system/extras" revision="e3f12c2d2dbd57a6628142cc4c9ba59adbce924f" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper" revision="644ddd6370eb6a943d56c8021ed98cc72599d50e" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/gsid" path="system/gsid" revision="60bbc030e129d8e160044bebfd2f8c04abe0ffd9" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="303520bd3f4f16c3dcc180851622f8cb3b84d2e0" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="5531f87ad32eaeca3659a8d2624733df0ca119d2" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/incremental_delivery" path="system/incremental_delivery" revision="629be47a284536e9b5529be1cf9c51e1f87ec6a5" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/iorap" path="system/iorap" revision="806a07b868ac808bbd7ef09c37d6bd180e15de36" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/keymaster" path="system/keymaster" revision="e2900afdbb64f00dc72050c6862147479ececed2" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/keymaster" path="system/keymaster" revision="3d3364efdcd4bf765e66d193fae2573981d4cd79" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/libartpalette" path="system/libartpalette" revision="6079ce8956a9e5716fcee559ab7c27f5f044386c" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/libbase" path="system/libbase" revision="78f1c2f83e625bdf66d55b48bdb3a301c20d2fb3" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/libfmq" path="system/libfmq" revision="0b86c494d121cae76ae2336e3ade962d0df7222c" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/libhidl" path="system/libhidl" revision="f38e3d71c376540a4099cad62c8b95c8e0976752" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/libhwbinder" path="system/libhwbinder" revision="6c4ba9650cef32dbbd7a6651c0826ca2ac4accd1" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/libfmq" path="system/libfmq" revision="133cb5e8a3d65fce5a86db809e2d04a0fc27f245" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/libhidl" path="system/libhidl" revision="f9893e8017114796e6e94756cfebee8270548ed0" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/libhwbinder" path="system/libhwbinder" revision="4ad67b7ba31719abfda477927bd01d6e9aae3c79" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/libsysprop" path="system/libsysprop" revision="0078f565a09d910e9b186428f6d343180d757b44" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/libufdt" path="system/libufdt" revision="727ccceadfaa49816a9ccf07762232fa09a54bef" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/libufdt" path="system/libufdt" revision="7fcb8ba8f4ca0edceac95ab05f299006b0922a64" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/libvintf" path="system/libvintf" revision="6c6eebf2acdae2b2f87c63e73848d6e73f7b08b9" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/libziparchive" path="system/libziparchive" revision="27d0eaa4ea9e6cfd7b9cf14ebc3fc5e6162a88f5" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/linkerconfig" path="system/linkerconfig" revision="0bb103f96df9d3fcbfdfdc1f06d344e1fc3c2ac3" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/media" path="system/media" revision="ed6d0e7c48c1dfe9bb7f5cf85f75e545284e2783" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/memory/libdmabufheap" path="system/memory/libdmabufheap" revision="2bc3e2c39d2b5297119bf8e7aa2b6494771f0e74" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/memory/libion" path="system/memory/libion" revision="fff944ed86fd8ab67cd3e961368522b1132d43a3" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/linkerconfig" path="system/linkerconfig" revision="a2a5d03590d128128bc6bd6a936d6ef9a1659d6c" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/media" path="system/media" revision="c539e1995a4f766d16416780fe6221f3f8151b56" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/memory/libdmabufheap" path="system/memory/libdmabufheap" revision="ec5411c80e077cdb78a6ab6faad882db5fdaf34b" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/memory/libion" path="system/memory/libion" revision="4f98785e4debdc8090fc0d5bfda2574b60f6ce46" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/memory/libmeminfo" path="system/memory/libmeminfo" revision="8bee3d91dc26ab34a17269b8ad7f11769d2e935f" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/memory/libmemtrack" path="system/memory/libmemtrack" revision="800d172aabf2be6b83939a41f996c070b22cc05d" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/memory/libmemunreachable" path="system/memory/libmemunreachable" revision="fe4c42218a61f3d54bb47810fb66f23e54e64cec" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/memory/lmkd" path="system/memory/lmkd" revision="d7b4fcb8a538abaedad194033da61f4f94a6d97a" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/memory/lmkd" path="system/memory/lmkd" revision="279268a07f3fa99b5cdeca27fbda76dafdd2fab3" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/netd" path="system/netd" revision="4d1c6b220989b85ae864ef04d94b49a44e2c71a6" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/nfc" path="system/nfc" revision="5d6cf5d30f58fcad9ad9413afb3046f64a045386" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/nfc" path="system/nfc" revision="bc7f2422e43ff8c5666013bd6e74928e578e306b" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/nvram" path="system/nvram" revision="184c1c9a5c39f51f82bdb453afc9cf144f8e4183" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/security" path="system/security" revision="dc246a01c1f0b4bfcda2d263e127be42968814c6" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/sepolicy" path="system/sepolicy" revision="cc782e451667a93bc55e15bb5766608f7792b39e" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/security" path="system/security" revision="c4946ad4355447d5f9272cef6e4679a100acea48" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/sepolicy" path="system/sepolicy" revision="46dd4be36658ff252992b8c7a04825f00aad51bd" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/server_configurable_flags" path="system/server_configurable_flags" revision="dc7438f938a08470f961ba04bb8767b4d44199cd" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/teeui" path="system/teeui" revision="aa62b6cb40f57cf9548099db1c91c8a452c100a6" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/testing/gtest_extras" path="system/testing/gtest_extras" revision="8b01e5b60bb320cc0f81da43f31bd6a73ecc7860" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/timezone" path="system/timezone" revision="0a4103ef371c813d4c33fd7ef85086b99594ad97" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/tools/aidl" path="system/tools/aidl" revision="db7ac514fd031b99944b9e4f4b3f3aed9c430476" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/tools/hidl" path="system/tools/hidl" revision="103d628819e23bb63f9b6913d02da6026644f870" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/testing/gtest_extras" path="system/testing/gtest_extras" revision="5a1e23a9de422395f9521ac85c56dc5cb02cf7ed" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/timezone" path="system/timezone" revision="d067fd1cdae01725ef232bed1a22ee57d2035069" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/tools/aidl" path="system/tools/aidl" revision="969f11aa434193fd2a411100d3b1ba3b25679fc0" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/tools/hidl" path="system/tools/hidl" revision="902084ea16da81a9625d55c64f9cf8d373265aa9" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/tools/mkbootimg" path="system/tools/mkbootimg" revision="5cc6456425d98d8fce685dcb13d3ad8baffccccf" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/system/tools/sysprop" path="system/tools/sysprop" revision="1d166c2f4d45a1c2eb6064b6c2f5bd5559a7d889" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/tools/xsdc" path="system/tools/xsdc" revision="91af95ccdcd4cd7da06471c84c661dc582b190b4" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/update_engine" path="system/update_engine" revision="5d7a1de410f98011b18306c679eec2cf29cda85f" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/system/vold" path="system/vold" revision="5de675c93be181256ecc0361e885fa922693cfb8" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/tools/xsdc" path="system/tools/xsdc" revision="20119b4d2c4b3f8e0af5127a6ed54050ca46549b" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/update_engine" path="system/update_engine" revision="b753e0e9258170dce7c62733eed78e616b4a37b2" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/system/vold" path="system/vold" revision="157a08bb924258001a7cd6ca219ff752de0b8dfd" upstream="master"/>
   <project dest-branch="master" name="platform/test/app_compat/csuite" path="test/app_compat/csuite" revision="a82698d20c210475ffbb9add00cc8502dc012abc" upstream="master"/>
   <project dest-branch="master" groups="vts,projectarch,pdk" name="platform/test/framework" path="test/framework" revision="0690d5b557c21763d28905a74dda85a41a3f65d7" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/test/mlts/benchmark" path="test/mlts/benchmark" revision="d8df104d8497f42c2a8fff0402b082f28bd902b3" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/test/mlts/benchmark" path="test/mlts/benchmark" revision="f8ecf74ab0db48ab02270bba5b76b68695d52a7b" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/test/mlts/models" path="test/mlts/models" revision="73313692ee90e6d768cd086fbb7c94298ecaf1ac" upstream="master"/>
   <project dest-branch="master" name="platform/test/mts" path="test/mts" revision="c6ba595da2de2eb1ec577842cbf33df1e83c4c11" upstream="master"/>
-  <project dest-branch="master" groups="cts,pdk-cw-fs,pdk-fs" name="platform/test/suite_harness" path="test/suite_harness" revision="2846fc39a7f5374a37406ee323c997e05b250373" upstream="master"/>
+  <project dest-branch="master" groups="cts,pdk-cw-fs,pdk-fs" name="platform/test/suite_harness" path="test/suite_harness" revision="a7091e024fb492b68646c9749e6d107607d348c5" upstream="master"/>
   <project dest-branch="master" groups="vts,projectarch,pdk" name="platform/test/vti/dashboard" path="test/vti/dashboard" revision="a9bd47e4caa21d535fb89c0e6efe23fa08d25847" upstream="master"/>
   <project dest-branch="master" groups="vts,projectarch,pdk" name="platform/test/vti/fuzz_test_serving" path="test/vti/fuzz_test_serving" revision="6319e3d94c65669050c49c6ca570096d41823b82" upstream="master"/>
   <project dest-branch="master" groups="vts,projectarch,pdk" name="platform/test/vti/test_serving" path="test/vti/test_serving" revision="3da55c2868ace67e4841506c3f20caf5b9dd27cb" upstream="master"/>
-  <project dest-branch="master" groups="vts,pdk" name="platform/test/vts" path="test/vts" revision="4c6cd427ad8bb72b59856a381f10b2c608eeb21a" upstream="master"/>
+  <project dest-branch="master" groups="vts,pdk" name="platform/test/vts" path="test/vts" revision="f22c4d2e249524363d3129ead8879fa522f20d88" upstream="master"/>
   <project dest-branch="master" groups="vts,projectarch,pdk" name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="b740c5e12e313e90f5d6754d04c72f19503aea57" upstream="master"/>
-  <project dest-branch="master" groups="vts,pdk" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="6a687ba500a88d33cf32e739a2fbf75720204fc9" upstream="master"/>
+  <project dest-branch="master" groups="vts,pdk" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="feb5285d6ca39f00253649bf9e02ee394eb1460b" upstream="master"/>
   <project dest-branch="master" groups="vts,pdk" name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="2695892568f8fade958ec0ec172df8f295ae4112" upstream="master"/>
-  <project dest-branch="master" groups="vts,pdk" name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="e9ff045753bd0d16148d3b73e475cfc03df64b4d" upstream="master"/>
+  <project dest-branch="master" groups="vts,pdk" name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="bb808fafe6d4c3f2a9f74965ecd846e79fd2ebb1" upstream="master"/>
   <project dest-branch="master" groups="vts,projectarch,pdk" name="platform/test/vts-testcase/nbu" path="test/vts-testcase/nbu" revision="0712e2a442364af77a0b1dda0adf922d1d1447bc" upstream="master"/>
   <project dest-branch="master" groups="vts,projectarch,pdk" name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="f0e5dcee43de6f9c44a3872721087d96eaa48273" upstream="master"/>
   <project dest-branch="master" groups="vts,projectarch,pdk" name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="50d45dc890d2ce5ad35527c0e3f3d82e7edbbe1f" upstream="master"/>
-  <project dest-branch="master" groups="vts,pdk" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="d1cf5ee0d7b873d80e70d6abce05354058062002" upstream="master"/>
-  <project dest-branch="master" groups="tools,vts,projectarch,pdk,tradefed" name="platform/tools/acloud" path="tools/acloud" revision="e86746c259190406bc489d9215e7bb44ddb897bb" upstream="master"/>
+  <project dest-branch="master" groups="vts,pdk" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="2cc998cab39b1ac3e8c4f46d2cbeab6cd0d7fee4" upstream="master"/>
+  <project dest-branch="master" groups="tools,vts,projectarch,pdk,tradefed" name="platform/tools/acloud" path="tools/acloud" revision="2ebd41468ce6e364c3437d23030493aee7ad4067" upstream="master"/>
   <project dest-branch="master" groups="pdk,tools" name="platform/tools/apifinder" path="tools/apifinder" revision="84052f24c4260257c01e298a454cb044a5c01242" upstream="master"/>
   <project dest-branch="master" groups="pdk,tradefed" name="platform/tools/apksig" path="tools/apksig" revision="e8db2a0b55e78efc3848fc575add5dfbe778b04d" upstream="master"/>
   <project dest-branch="master" groups="pdk,tradefed" name="platform/tools/apkzlib" path="tools/apkzlib" revision="eba4cc5b98798e46c3f80b9dd0bdbd92757e4dde" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/tools/asuite" path="tools/asuite" revision="2445f9a0adfe34c9a24119b338a6c97c66ecf1d9" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/tools/asuite" path="tools/asuite" revision="86d262bf2ccd68484288338d71c78b44918d8b02" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/tools/currysrc" path="tools/currysrc" revision="7074dfcc06d5e89a0980885c6955124edbb946fc" upstream="master"/>
   <project dest-branch="master" groups="tools,pdk-fs" name="platform/tools/dexter" path="tools/dexter" revision="298a27ed8a7de2c91e30d1b343713c0490fdc503" upstream="master"/>
   <project dest-branch="master" groups="tools" name="platform/tools/doc_generation" path="tools/doc_generation" revision="e7c9b74790a10ef58f165b32d0755831a8d93e32" upstream="master"/>
   <project dest-branch="master" groups="tools" name="platform/tools/external/fat32lib" path="tools/external/fat32lib" revision="68194a031e8f0a8f4ab68184aeb7ee9d9b86ceca" upstream="master"/>
   <project dest-branch="master" groups="tools" name="platform/tools/external_updater" path="tools/external_updater" revision="e8c98de52551020ad857b106d45f026ee607d6f4" upstream="master"/>
   <project dest-branch="master" groups="nopresubmit,pdk,tradefed" name="platform/tools/loganalysis" path="tools/loganalysis" revision="24fc3e04ee73c2f64c588ffb37f6d603d1e77231" upstream="master"/>
-  <project dest-branch="master" groups="pdk,tools" name="platform/tools/metalava" path="tools/metalava" revision="1c8c0af98fecd1e02f1f55c5d97e2fe3a7699948" upstream="master"/>
-  <project dest-branch="master" groups="adt-infra,cts,developers,motodev,pdk,tools,tradefed" name="platform/tools/repohooks" path="tools/repohooks" revision="7e07d8f6fd7a290a9fce80bb403efdf2d6ab592d" upstream="master"/>
-  <project dest-branch="master" groups="pdk,tools" name="platform/tools/security" path="tools/security" revision="5de12c62271730443c0762a13c0b6d229435261e" upstream="master"/>
-  <project dest-branch="master" groups="pdk" name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="c20fb04f3f192381b536aed443aaa9af262c58b8" upstream="master"/>
+  <project dest-branch="master" groups="pdk,tools" name="platform/tools/metalava" path="tools/metalava" revision="5e6235cfddca49ad7149a0d6356d2f884fade3ac" upstream="master"/>
+  <project dest-branch="master" groups="adt-infra,cts,developers,motodev,pdk,tools,tradefed" name="platform/tools/repohooks" path="tools/repohooks" revision="8ee0f2a82668b9b0f58792b54eec36433d10076b" upstream="master"/>
+  <project dest-branch="master" groups="pdk,tools" name="platform/tools/security" path="tools/security" revision="dfe5e9c203b25bbb5fb0288d8fb6763f6231d49e" upstream="master"/>
+  <project dest-branch="master" groups="pdk" name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="bce8a9f27b9f1507a517017a0d30ed83909a234d" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="platform/tools/test/graphicsbenchmark" path="tools/test/graphicsbenchmark" revision="9eb54ab3f7f35d1696ca650d02a0657620d25f09" upstream="master"/>
   <project dest-branch="master" groups="tools" name="platform/tools/test/openhst" path="tools/test/openhst" revision="da7edd0aa694c175a34f9dc507cad301610bfc3f" upstream="master"/>
-  <project dest-branch="master" groups="pdk,tradefed" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="c3ea459b3262d08dfcec460cc58541e493ada9bf" upstream="master"/>
-  <project dest-branch="master" groups="pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="33061ed643eb6cdc205a1676849dc4aeae0b8efa" upstream="master"/>
-  <project dest-branch="master" groups="tools,pdk" name="platform/tools/treble" path="tools/treble" revision="77a15cc7664628ff7ad00c35dfb8c1829ed5ffe0" upstream="master"/>
+  <project dest-branch="master" groups="pdk,tradefed" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="57f66eb4dc040d6bf6498c2df5426172de80a9de" upstream="master"/>
+  <project dest-branch="master" groups="pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="235d9d2892fe3390b0a5d22918fd1b119234f291" upstream="master"/>
+  <project dest-branch="master" groups="tools,pdk" name="platform/tools/treble" path="tools/treble" revision="d9888a197343339e24cd91767a6f683c69ac5ccf" upstream="master"/>
   <project dest-branch="master" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" name="platform/tools/trebuchet" path="tools/trebuchet" revision="d2240446bb55e53591d85fe1b9a795aca10a92be" upstream="master"/>
   <project dest-branch="master" name="toolchain/benchmark" revision="b8f114fae8201769bc8c13424e2a59ff93e109f4" upstream="master"/>
   <project dest-branch="master" groups="pdk" name="toolchain/pgo-profiles" revision="e0d6d44cd78bce117dab8362f6f6d4f5da5d74cc" upstream="master"/>
