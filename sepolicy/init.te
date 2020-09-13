@@ -1,3 +1,0 @@
-# audit2allow
-# symlink /sdcard /mnt/sdcard
-allow init tmpfs:lnk_file create;

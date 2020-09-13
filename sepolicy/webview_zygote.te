@@ -1,2 +1,0 @@
-# audit2allow
-allow webview_zygote zygote:unix_dgram_socket write;
