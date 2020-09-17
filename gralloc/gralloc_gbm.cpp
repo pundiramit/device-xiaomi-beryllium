@@ -24,11 +24,12 @@
 
 #define LOG_TAG "GRALLOC-GBM"
 
-#include <cutils/log.h>
+#include <log/log.h>
 #include <cutils/atomic.h>
 #include <cutils/properties.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include <errno.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -382,8 +383,7 @@ buffer_handle_t gralloc_gbm_bo_create(struct gbm_device *gbm,
 	gbm_bo_handle_map.emplace(handle, bo);
 
 	/* in pixels */
-	struct gralloc_handle_t *ghandle = gralloc_handle(handle);
-	*stride = ghandle->stride / gralloc_gbm_get_bpp(format);
+	*stride = gralloc_handle(handle)->stride / gralloc_gbm_get_bpp(format);
 
 	return handle;
 }
@@ -420,7 +420,7 @@ int gralloc_gbm_bo_lock(buffer_handle_t handle,
 		gbm_bo_set_user_data(bo, bo_data, gralloc_gbm_destroy_user_data);
 	}
 
-	ALOGI("lock bo %p, cnt=%d, usage=%x", bo, bo_data->lock_count, usage);
+	ALOGV("lock bo %p, cnt=%d, usage=%x", bo, bo_data->lock_count, usage);
 
 	/* allow multiple locks with compatible usages */
 	if (bo_data->lock_count && (bo_data->locked_for & usage) != usage)
@@ -491,10 +491,10 @@ int gralloc_gbm_bo_lock_ycbcr(buffer_handle_t handle,
 {
 	struct gralloc_handle_t *hnd = gralloc_handle(handle);
 	int ystride, cstride;
-	void *addr;
+	void *addr = 0;
 	int err;
 
-	ALOGD("handle %p, hnd %p, usage 0x%x", handle, hnd, usage);
+	ALOGV("handle %p, hnd %p, usage 0x%x", handle, hnd, usage);
 
 	err = gralloc_gbm_bo_lock(handle, usage, x, y, w, h, &addr);
 	if (err)
