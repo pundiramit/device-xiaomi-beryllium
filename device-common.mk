@@ -136,6 +136,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy
 
+# Copy hardware config file(s)
+PRODUCT_COPY_FILES +=  \
+        device/linaro/dragonboard/etc/permissions/android.software.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.xml
+
 # Memtrack
 PRODUCT_PACKAGES += \
     memtrack.default \
