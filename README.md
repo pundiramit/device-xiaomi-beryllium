@@ -78,10 +78,10 @@ repo sync -j$nproc
 BUILD_CONFIG=beryllium/build.config.beryllium ./build/build.sh
 ```
 
-Delete all objects in aosp-repo/device/xiaomi/beryllium/prebuilt-kernel/android-mainline/
-then copy build artifacts from kernel-repo/out/beryllium-android-mainline/dist/ to
-aosp-repo/device/xiaomi/beryllium/prebuilt-kernel/android-mainline/ build
-AOSP images again.
+* Delete all objects in aosp-repo/device/xiaomi/beryllium/prebuilt-kernel/android-mainline/
+  then copy build artifacts from kernel-repo/out/beryllium-android-mainline/dist/ to
+  aosp-repo/device/xiaomi/beryllium/prebuilt-kernel/android-mainline/ build
+  AOSP images again.
 
 ```
 cd aosp-repo
@@ -90,9 +90,18 @@ lunch beryllium-userdebug
 make TARGET_KERNEL_USE=mainline -j$nproc
 ```
 
-Now flash and boot AOSP images again with your custom kernel.
+* Now reflash the images as above and boot with your custom kernel.
 
-ToDo -->
-* Brightness Control
+  NOTE:
+
+        By default the above instructions will sync/download
+        beryllium-android-mainline branch to kernel-repo/beryllium directory.
+        If you want to reproduce android12-5.4 or GKI build then checkout
+        common-android12-5.4 repo manifest and beryllium-android-5.4 branch instead.
+
+# ToDo -->
+* LEDs and Brightness Control
+* Camera
 * Modem / RIL / Voice Call
 * Battery Stats
+* Sensors and Accelerometers
