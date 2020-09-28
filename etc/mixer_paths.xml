@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mixer>
+	<!-- Enable Internal speaker -->
+	<ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+	<ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia2" value="1" />
+</mixer>
