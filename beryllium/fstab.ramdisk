@@ -1,4 +1,4 @@
 /dev/block/platform/soc@0/1d84000.ufshc/by-name/system /system ext4 noatime,ro,errors=panic wait,first_stage_mount
 /dev/block/platform/soc@0/1d84000.ufshc/by-name/vendor /vendor ext4 noatime,ro,errors=panic wait,first_stage_mount
-/dev/block/platform/soc@0/1d84000.ufshc/by-name/userdata /data		ext4	discard,noatime,noauto_da_alloc,data=ordered,user_xattr,barrier=1,inlinecrypt	wait,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized
+/dev/block/platform/soc@0/1d84000.ufshc/by-name/userdata /data		ext4	discard,noatime,noauto_da_alloc,data=ordered,user_xattr,barrier=1,inlinecrypt	wait,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,quota
 /devices/platform/soc@0/8804000.sdhci/mmc_host/mmc*	auto	auto	defaults	voldmanaged=sdcard1:auto
