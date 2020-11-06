@@ -68,8 +68,7 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf \
-    wificond \
-    wifilogd
+    wificond
 
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
