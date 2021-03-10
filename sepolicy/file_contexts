@@ -35,6 +35,7 @@
 
 /vendor/lib(64)?/dri/.*									u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/hw/gralloc\.gbm\.so							u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/android\.hardware\.health@2\.0-impl-2\.1-cuttlefish\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libdrm\.so								u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libdrm_freedreno\.so							u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgbm_mesa\.so							u:object_r:same_process_hal_file:s0
