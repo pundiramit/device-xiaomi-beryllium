@@ -54,8 +54,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.gralloc=gbm \
     ro.hardware.hwcomposer=drm \
     debug.sf.no_hw_vsync=1 \
-    hwc.drm.use_framebuffer_target=1 \
-    hwc.drm.use_overlay_planes=0 \
     ro.sf.lcd_density=400 \
     ro.opengles.version=196609
 
