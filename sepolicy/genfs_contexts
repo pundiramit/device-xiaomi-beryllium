@@ -4,3 +4,4 @@ genfscon sysfs   /devices/platform/remoteproc-cdsp/remoteproc					u:object_r:sys
 genfscon sysfs   /devices/platform/soc@0/4080000.remoteproc					u:object_r:sysfs_remoteproc:s0
 genfscon sysfs   /devices/platform/soc@0/ae00000.mdss						u:object_r:sysfs_gpu:s0
 genfscon sysfs   /devices/platform/soc@0/c440000.spmi/spmi-0/0-00/c440000.spmi:pmic@0:rtc@6000	u:object_r:sysfs_rtc:s0
+genfscon sysfs   /devices/platform/soc@0/c440000.spmi/spmi-0/0-03/c440000.spmi:pmic@3:wled@d800/backlight/wled/ u:object_r:sysfs_lights:s0

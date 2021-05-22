@@ -162,6 +162,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES := \
     mkbootimg
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service
+
 # Copy standard platform config files
 PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/ueventd.common.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc \

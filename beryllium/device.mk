@@ -32,6 +32,9 @@ PRODUCT_COPY_FILES := \
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.beryllium
 
+# Build generic lights HAL
+PRODUCT_PACKAGES += lights.beryllium
+
 PRODUCT_PACKAGES += \
     pd-mapper \
     qrtr-ns \

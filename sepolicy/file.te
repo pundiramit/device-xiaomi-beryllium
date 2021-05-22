@@ -1,4 +1,5 @@
 type sysfs_gpu, fs_type, sysfs_type;
+type sysfs_lights, fs_type, sysfs_type;
 type sysfs_mss, fs_type, sysfs_type;
 type sysfs_rmtfs, fs_type, sysfs_type;
 type sysfs_remoteproc, fs_type, sysfs_type;
