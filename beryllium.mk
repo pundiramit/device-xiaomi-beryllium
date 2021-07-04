@@ -1,5 +1,5 @@
 ifndef TARGET_KERNEL_USE
-TARGET_KERNEL_USE := 5.4
+TARGET_KERNEL_USE := mainline
 endif
 
 KERNEL_MODS := $(wildcard device/xiaomi/beryllium/prebuilt-kernel/android-$(TARGET_KERNEL_USE)/*.ko)
