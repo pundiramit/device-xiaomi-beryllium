@@ -34,7 +34,7 @@ very handy. Believe me :)
 mkdir aosp-repo
 cd aosp-repo
 repo init -u https://android.googlesource.com/platform/manifest -b master
-git clone git@github.com:pundiramit/android-local-manifests.git .repo/local_manifests -b master
+git clone https://github.com/pundiramit/android-local-manifests.git .repo/local_manifests -b master
 repo sync -j$nproc
 source build/envsetup.sh
 lunch beryllium-userdebug
