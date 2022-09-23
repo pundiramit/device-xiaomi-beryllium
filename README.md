@@ -1,3 +1,12 @@
+*************************************************************************
+THIS REPO IS DEPRECATED. PLEASE USE https://github.com/aospm PROJECT TO BUILD AOSP FOR BERYLLIUM (PocoF1)
+
+Clone AOSPM and run -->
+
+$ lunch beryllium-userdebug
+$ make TARGET_KERNEL_USE=upstream -j$nproc
+*************************************************************************
+
 # device/xiaomi/beryllium (AOSP device config for Xiaomi Poco F1)
 
 # How to unlock and root Poco F1?
